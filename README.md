@@ -31,11 +31,4 @@ Following table shows the testing accuracy after 500 iterations.
 |LightGBM, 255 bins | 0.8453 | 0.9550 | 3.6206 | 0.9499 | 0.5743 | 701.3 |
 |XGBoost, 255 bins | 0.8456 | 0.9550 | 3.6177 | 0.9500  | 0.5716 | 701.1 |
 
-![higgs](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs.pdf) | ![hepmass](figures/convergence rate/hepmass.pdf)
-
-<object data="https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs.pdf">
-        This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
-    </embed>
-</object>
-
+![higgs](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs_and_hepmass.png) 
