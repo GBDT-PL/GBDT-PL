@@ -8,5 +8,6 @@ Single Instruction Multiple Data (SIMD) parallelism. We name our new algorithm G
 We evaluate our algorithm on 4 public datasets. In addition, we create 2 synthetic datasets. 
 
 |Dataset Name| #Training | #Testing | #Features |      Task      | Link |
-|------------|-----------|----------|-----------|----------------|------|
-|    Higgs   | 1000,0000 | 500,000  |     28    | Classification | [higgs](https://archive.ics.uci.edu/ml/datasets/HIGGS) |
+|------------|------------|----------|-----------|----------------|------|
+|    Higgs   | 10,000,000 | 500,000  |     28    | Classification | [higgs](https://archive.ics.uci.edu/ml/datasets/HIGGS) |
+|   Epsilon  | 40,000 | 10,000  |     2000    | Classification | [epsilon](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html) |
