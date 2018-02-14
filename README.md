@@ -32,3 +32,5 @@ Following table shows the testing accuracy after 500 iterations.
 |XGBoost, 255 bins | 0.8456 | 0.9550 | 3.6177 | 0.9500  | 0.5716 | 701.1 |
 
 ![higgs](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs_and_hepmass.png) 
+
+Add Soon ...
