@@ -10,4 +10,4 @@ We evaluate our algorithm on 4 public datasets. In addition, we create 2 synthet
 |Dataset Name| #Training | #Testing | #Features |      Task      | Link |
 |------------|------------|----------|-----------|----------------|------|
 |    Higgs   | 10,000,000 | 500,000  |     28    | Classification | [higgs](https://archive.ics.uci.edu/ml/datasets/HIGGS) |
-|   Epsilon  | 40,000 | 10,000  |     2000    | Classification | [epsilon](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html) |
+|   Epsilon  | 400,000 | 100,000  |     2000    | Classification | [epsilon](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html) |
