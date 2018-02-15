@@ -32,7 +32,7 @@ By default, we use the histogram version of XGBoost and LightGBM. Each tree in o
 
 ### Convergence Rate
 We run 500 iterations and plot testing accuracy per iteration. Figure 1 shows the results. We use lgb for [LightGBM](https://github.com/Microsoft/LightGBM) and xgb for [XGBoost](https://github.com/dmlc/xgboost) in the figure legends. 
-Following table shows the testing accuracy after 500 iterations. 
+Following table shows the testing accuracy after 500 iterations. For classification tasks, we use AUC as metric, and for regression we use RMSE.
 
 |Algorithm | HIGGS | HEPMASS | CASP | Epsilon | Cubic | Poly |
 |----------|-------|---------|------|---------|-------|------|
