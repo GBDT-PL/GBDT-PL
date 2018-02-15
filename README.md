@@ -40,6 +40,7 @@ We plot the accuracy of testing sets w.r.t. training time in Figure 2. To leave 
 
 ### Testing Time
 To measure the testing time accurately, we expand some testing sets by replicating the original ones several times. Note that replicating the testing sets won't change the testing accuracy (at least for AUC and RMSE). The details are listed in the following table. We plot the testing accuracy w.r.t. the testing time in Figure 3. We use 48 threads for all experiments in this section.
+
 |Dataset Name | #Original Testing | #Expanded Testing |  Replicate   | 
 |-------------|-------------------|-------------------|--------------|
 |    Higgs   | 500,000 | 10,000,000  |     x20    |
