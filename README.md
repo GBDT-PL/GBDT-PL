@@ -36,7 +36,7 @@ Following table shows the testing accuracy after 500 iterations.
 ### Training Time
 We plot the accuracy of testing sets w.r.t. training time in Figure 2. To leave out the effect of evaluation time, for each dataset we have two separate runs. In the first run we record the training time per iteration only, without doing evaluation. In the second round we evaluate the accuracy every iteration. We use 24 threads for all algorithms. The preprocessing time is excluded. 
 
-![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/training\ time.png)
+![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/training time.png)
 
 ### Testing Time
 To measure the testing time accurately, we expand some testing sets by replicating the original ones several times. Note that replicating the testing sets won't change the testing accuracy (at least for AUC and RMSE). The details are listed in the following table. We plot the testing accuracy w.r.t. the testing time in Figure 3. We use 48 threads for all experiments in this section.
@@ -50,4 +50,4 @@ To measure the testing time accurately, we expand some testing sets by replicati
 | Poly | 1,000,000 | 1,000,000 | x1 | 
 | Cubic | 1,000,000 | 10,000,000 | x10 | 
 
-![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/testing\ time.png)
+![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/testing time.png)
