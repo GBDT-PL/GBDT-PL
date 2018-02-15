@@ -24,7 +24,7 @@ We use a linux server with 2 Xeon E5-2690 v3 CPUs for all our experiments.
 |---|-----|--------|
 |CentOS Linux 7 | 2 x Xeon E5-2690 v3 | DDR4 2400Mhz, 128GB|
 
-By default, we use the histogram version of XGBoost and LightGBM. Each tree in our experiments has at most 255 leaves. The learning rate is 0.1. We test both 63 bins and 255 bins for the histograms. $\lambda$ is the coefficient for regularization terms. \textit{min sum of hessians} is the minimum sum of hessians allowed in each leaf. We set it to be 100 to prevent the trees from growing too deep. For GBDT-PL, we use at most 5 regressors per leaf. 
+By default, we use the histogram version of XGBoost and LightGBM. Each tree in our experiments has at most 255 leaves. The learning rate is 0.1. We test both 63 bins and 255 bins for the histograms. $'\lambda'$ is the coefficient for regularization terms. \textit{min sum of hessians} is the minimum sum of hessians allowed in each leaf. We set it to be 100 to prevent the trees from growing too deep. For GBDT-PL, we use at most 5 regressors per leaf. 
 
 |max leaves | learning rate | bins | $\lambda$ | min sum of hessians |
 |-----------|---------------|------|-----------|---------------------|
