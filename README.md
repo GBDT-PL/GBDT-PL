@@ -33,4 +33,9 @@ Following table shows the testing accuracy after 500 iterations.
 
 ![higgs](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs_and_hepmass.png) 
 
+<div id="fig:subfigures" class="subfigures" data-caption="Caption for figure">
+![higgs](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/higgs.png)
+![hepmass](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence%20rate/hepmass.png)
+</div>
+
 Add Soon ...
