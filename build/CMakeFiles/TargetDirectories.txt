@@ -1,0 +1,2 @@
+/data1/shiyu/GBDT-PL/build/CMakeFiles/GBDT-PL.dir
+/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir

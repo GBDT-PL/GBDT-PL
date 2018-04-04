@@ -18,6 +18,9 @@ using std::string;
 
 class BoosterConfig {
 public:
+
+    BoosterConfig() {} 
+
     BoosterConfig(int _num_trees,
                   int _max_leaf,
                   double _min_gain,
@@ -154,6 +157,31 @@ public:
     double goss_alpha;
     double goss_beta; 
     
+
+    void PrintAllParams() {
+   	cout << "num_trees " << num_trees << endl;
+        cout << "max_leaf " << max_leaf << endl;
+        cout << "min_gain " << min_gain << endl;
+        cout << "l2_reg " << l2_reg << endl;
+        cout << "loss " << loss << endl;
+        cout << "learning_rate " << learning_rate << endl;  
+        cout << "eval_metric " << eval_metric << endl;
+        cout << "num_classes " << num_classes << endl;
+        cout << "num_threads " << num_threads << endl;
+        cout << "max_bin " << max_bin << endl;
+        cout << "min_sum_hessian_in_leaf " << min_sum_hessian_in_leaf << endl;
+        cout << "num_vars " << num_vars << endl;
+        cout << "grow_by " << grow_by << endl;
+        cout << "max_level " << max_level << endl;
+        cout << "verbose " << verbose << endl;
+         cout << "leaf type " << leaf_type << endl;
+         cout << "sparse threshold 1 " << sparse_threshold << endl;
+         cout << "boosting_type " << boosting_type << endl;
+         cout << "goss_alpha " << goss_alpha << endl;
+         cout << "goss_beta " << goss_beta << endl;
+    }
+
+
     void ClearIterationTime() {
         prepare_bin_time = 0.0;
         prepare_histogram_time = 0.0;

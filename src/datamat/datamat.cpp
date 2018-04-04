@@ -20,11 +20,8 @@ using std::endl;
 DataMat::DataMat(const BoosterConfig& _booster_config,
                  string _name, int _label_idx, int _query_idx,
                  string fname,
-                 vector<vector<double>> _data,
-                 vector<double> _label,
-                 vector<int> _queries,
                  DataMat* _reference):
-data(_data), label(_label), booster_config(_booster_config), name(_name), queries(_queries) {
+booster_config(_booster_config), name(_name) {
     label_idx = _label_idx;
     query_idx = _query_idx;
     reference = _reference;

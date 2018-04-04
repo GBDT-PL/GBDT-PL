@@ -32,11 +32,8 @@ public:
             string _name,
             int _label_idx,
             int _query_idx,
-            string fname, 
-            vector<vector<double>> _data = vector<vector<double>>(),
-            vector<double> _label = vector<double>(),
-            vector<int> _queries = vector<int>(),
-            DataMat* _reference = nullptr);
+            string fname,
+	    DataMat* _reference = nullptr);
     
     void Shrink(); 
     

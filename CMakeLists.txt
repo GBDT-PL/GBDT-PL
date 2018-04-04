@@ -1,0 +1,37 @@
+cmake_minimum_required(VERSION 3.1)
+
+project(GBDT-PL)
+
+set (MKLROOT "$ENV{MKLROOT}")
+set (CMAKE_CXX_COMPILER g++)
+
+set (CMAKE_CXX_STANDARD 11)
+set (GBDT-PL_Version_Major 1)
+set (GBDT-PL_Version_Minor 0)
+set (CMAKE_BINARY_DIR ${CMAKE_SOURCE_DIR}/build)
+set (EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR})
+set (LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+macro(print_all_variables)
+    message(STATUS "print_all_variables------------------------------------------{")
+    get_cmake_property(_variableNames VARIABLES)
+    foreach (_variableName ${_variableNames})
+        message(STATUS "${_variableName}=${${_variableName}}")
+    endforeach()
+    message(STATUS "print_all_variables------------------------------------------}")
+endmacro()
+
+find_package(OpenMP)
+if (OPENMP_FOUND)
+    set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS} -I${MKLROOT}/include")
+    set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS} -O3 -mavx2 -mbmi2")
+endif()
+
+#AUX_SOURCE_DIRECTORY(src LINEARGBM_SOURCES)
+file(GLOB LINEARGBM_SOURCES src/*.cpp src/*/*.cpp)
+print_all_variables()
+add_library(lineargbm SHARED src/main.cpp ${LINEARGBM_SOURCES})
+add_executable(GBDT-PL src/main.cpp ${LINEARGBM_SOURCES})
+target_link_libraries(GBDT-PL -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_lp64.a ${MKLROOT}/lib/intel64/libmkl_intel_thread.a ${MKLROOT}/lib/intel64/libmkl_core.a -Wl,--end-group iomp5 pthread m dl)
+target_link_libraries(lineargbm -Wl,--start-group ${MKLROOT}/lib/intel64/libmkl_intel_lp64.a ${MKLROOT}/lib/intel64/libmkl_intel_thread.a ${MKLROOT}/lib/intel64/libmkl_core.a -Wl,--end-group iomp5 pthread m dl)

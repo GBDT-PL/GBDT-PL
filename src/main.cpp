@@ -42,11 +42,10 @@ int main(int argc, const char * argv[]) {
                                  100.0, std::atoi(argv[4]), "leaf", argv[5], 5, std::atoi(argv[6]), 0.0, argv[7], 0.2, 0.1); 
     
     DataMat data_mat(booster_config, "train", std::atoi(argv[8]), std::atoi(argv[9]),
-                     argv[10],
-                     train_data, train_label, train_queries);
+                     argv[10]); 
     DataMat test_mat(booster_config, "test", std::atoi(argv[8]), std::atoi(argv[9]),
                      argv[11],
-                     test_data, test_label, test_queries, &data_mat);
+                     &data_mat);
     
     /*BoosterConfig booster_config(500, 254, 0.0, 0.01, "logistic", 0.1,        
                                  "auc", 1, 32, 63,
@@ -69,7 +68,7 @@ int main(int argc, const char * argv[]) {
     std::vector<int> predict_queries;
     DataMat predict_data(booster_config, "predict", std::atoi(argv[8]), std::atoi(argv[9]),
                      argv[11],  
-                     predict_matrix, predict_label, predict_queries, &data_mat);
+                     &data_mat);
     
     vector<double> result;
     booster.Predict(predict_data, result);
