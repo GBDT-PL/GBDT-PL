@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/data1/shiyu/GBDT-PL/src/features/sparse_linear_bin_feature.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o"
   "/data1/shiyu/GBDT-PL/src/histogram/row_histogram.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o"
   "/data1/shiyu/GBDT-PL/src/interface/interface.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o"
+  "/data1/shiyu/GBDT-PL/src/io/data_reader.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o"
   "/data1/shiyu/GBDT-PL/src/main.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/main.cpp.o"
   "/data1/shiyu/GBDT-PL/src/metric/auc.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o"
   "/data1/shiyu/GBDT-PL/src/metric/metric.cpp" "/data1/shiyu/GBDT-PL/build/CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o"

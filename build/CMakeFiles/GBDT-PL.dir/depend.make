@@ -9,6 +9,7 @@ CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/argmax.h
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/booster.hpp
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../include/metric.hpp
@@ -30,6 +31,7 @@ CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o: ../src/booster/thresh
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/objective.hpp
@@ -38,11 +40,13 @@ CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../include/split_info.h
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../src/datamat/data_partition.cpp
 
 CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o: ../include/booster_config.hpp
+CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o: ../src/datamat/datamat.cpp
 
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../include/booster_config.hpp
+CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../include/row_histogram.hpp
@@ -51,6 +55,7 @@ CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../src/features/li
 
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../include/booster_config.hpp
+CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../include/row_histogram.hpp
@@ -59,6 +64,7 @@ CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../src/features/order
 
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/booster_config.hpp
+CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/row_histogram.hpp
@@ -73,6 +79,7 @@ CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/alignment_alloc
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/booster.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/interface.hpp
@@ -84,10 +91,14 @@ CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/split_info.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../include/tree.hpp
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../src/interface/interface.cpp
 
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o: ../include/data_reader.hpp
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o: ../src/io/data_reader.cpp
+
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/booster.hpp
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o: ../include/metric.hpp
@@ -117,6 +128,7 @@ CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o: ../src/metric/rmse.cpp
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../include/node.hpp
@@ -128,6 +140,7 @@ CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../src/node/additive
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../include/node.hpp
@@ -159,6 +172,7 @@ CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o: ../src/objective/regressi
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../include/node.hpp
@@ -171,6 +185,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../src/tree/leaf_wise_tree
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../include/node.hpp
@@ -183,6 +198,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../src/tree/level_wise_tr
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../include/node.hpp
@@ -195,6 +211,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../src/tree/tree.cpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/booster_config.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/data_partition.hpp
+CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/data_reader.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/datamat.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/feature.hpp
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../include/node.hpp

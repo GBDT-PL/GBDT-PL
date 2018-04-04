@@ -10,6 +10,7 @@ CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o
  ../include/booster.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/metric.hpp
@@ -31,6 +32,7 @@ CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/objective.hpp
@@ -39,11 +41,13 @@ CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o
  /data1/shiyu/GBDT-PL/src/datamat/data_partition.cpp
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o
  ../include/booster_config.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  /data1/shiyu/GBDT-PL/src/datamat/datamat.cpp
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/row_histogram.hpp
@@ -52,6 +56,7 @@ CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/row_histogram.hpp
@@ -60,6 +65,7 @@ CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/row_histogram.hpp
@@ -74,6 +80,7 @@ CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o
  ../include/booster.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/interface.hpp
@@ -84,11 +91,15 @@ CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o
  ../include/split_info.hpp
  ../include/tree.hpp
  /data1/shiyu/GBDT-PL/src/interface/interface.cpp
+CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o
+ ../include/data_reader.hpp
+ /data1/shiyu/GBDT-PL/src/io/data_reader.cpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/metric.hpp
@@ -118,6 +129,7 @@ CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/node.hpp
@@ -129,6 +141,7 @@ CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/node.hpp
@@ -160,6 +173,7 @@ CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/node.hpp
@@ -172,6 +186,7 @@ CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/node.hpp
@@ -184,6 +199,7 @@ CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/node.hpp
@@ -196,6 +212,7 @@ CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o
  ../include/alignment_allocator.hpp
  ../include/booster_config.hpp
  ../include/data_partition.hpp
+ ../include/data_reader.hpp
  ../include/datamat.hpp
  ../include/feature.hpp
  ../include/node.hpp

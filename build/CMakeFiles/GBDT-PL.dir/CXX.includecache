@@ -76,6 +76,16 @@ alignment_allocator.hpp
 objective.hpp
 ../include/objective.hpp
 
+../include/data_reader.hpp
+string
+-
+vector
+-
+fstream
+-
+omp.h
+-
+
 ../include/datamat.hpp
 vector
 -
@@ -87,6 +97,8 @@ string
 -
 algorithm
 -
+data_reader.hpp
+../include/data_reader.hpp
 
 ../include/feature.hpp
 vector
@@ -336,6 +348,16 @@ string
 cassert
 -
 iostream
+-
+
+/data1/shiyu/GBDT-PL/src/io/data_reader.cpp
+data_reader.hpp
+/data1/shiyu/GBDT-PL/src/io/data_reader.hpp
+iostream
+-
+cassert
+-
+algorithm
 -
 
 /data1/shiyu/GBDT-PL/src/main.cpp

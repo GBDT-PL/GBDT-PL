@@ -126,17 +126,23 @@ void Booster::GetMask(double prob, std::vector<bool> &mask) {
 }
 
 void Booster::SetupEvals() {
-    if(booster_config.verbose == 2) {
+    if(booster_config.verbose > 0) {
         if(booster_config.eval_metric == "auc") {
+	    if(booster_config.verbose == 2) {
             train_eval = new AUC(booster_config, train_data.label, train_predict_values);
+	    }
             test_eval = new AUC(booster_config, test_data.label, test_predict_values);
         }
         else if(booster_config.eval_metric == "rmse") {
+	    if(booster_config.verbose == 2) {
             train_eval = new RMSE(booster_config, train_data.label, train_predict_values);
+	    }
             test_eval = new RMSE(booster_config, test_data.label, test_predict_values);
         }
         else if(booster_config.eval_metric == "ndcg") {
+	    if(booster_config.verbose == 2) {
             train_eval = new NDCG(booster_config, train_data.label, train_predict_values, train_data.queries);
+	    }
             test_eval = new NDCG(booster_config, test_data.label, test_predict_values, test_data.queries);
         }
     }

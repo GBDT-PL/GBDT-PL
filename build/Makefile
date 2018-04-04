@@ -436,6 +436,36 @@ src/interface/interface.cpp.s:
 	$(MAKE) -f CMakeFiles/lineargbm.dir/build.make CMakeFiles/lineargbm.dir/src/interface/interface.cpp.s
 .PHONY : src/interface/interface.cpp.s
 
+src/io/data_reader.o: src/io/data_reader.cpp.o
+
+.PHONY : src/io/data_reader.o
+
+# target to build an object file
+src/io/data_reader.cpp.o:
+	$(MAKE) -f CMakeFiles/GBDT-PL.dir/build.make CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o
+	$(MAKE) -f CMakeFiles/lineargbm.dir/build.make CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o
+.PHONY : src/io/data_reader.cpp.o
+
+src/io/data_reader.i: src/io/data_reader.cpp.i
+
+.PHONY : src/io/data_reader.i
+
+# target to preprocess a source file
+src/io/data_reader.cpp.i:
+	$(MAKE) -f CMakeFiles/GBDT-PL.dir/build.make CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.i
+	$(MAKE) -f CMakeFiles/lineargbm.dir/build.make CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.i
+.PHONY : src/io/data_reader.cpp.i
+
+src/io/data_reader.s: src/io/data_reader.cpp.s
+
+.PHONY : src/io/data_reader.s
+
+# target to generate assembly for a file
+src/io/data_reader.cpp.s:
+	$(MAKE) -f CMakeFiles/GBDT-PL.dir/build.make CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.s
+	$(MAKE) -f CMakeFiles/lineargbm.dir/build.make CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.s
+.PHONY : src/io/data_reader.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -926,6 +956,9 @@ help:
 	@echo "... src/interface/interface.o"
 	@echo "... src/interface/interface.i"
 	@echo "... src/interface/interface.s"
+	@echo "... src/io/data_reader.o"
+	@echo "... src/io/data_reader.i"
+	@echo "... src/io/data_reader.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

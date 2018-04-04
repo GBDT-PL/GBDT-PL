@@ -81,9 +81,33 @@ CMakeFiles/GBDT-PL.dir/src/main.cpp.o.provides: CMakeFiles/GBDT-PL.dir/src/main.
 CMakeFiles/GBDT-PL.dir/src/main.cpp.o.provides.build: CMakeFiles/GBDT-PL.dir/src/main.cpp.o
 
 
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o: ../src/io/data_reader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o -c /data1/shiyu/GBDT-PL/src/io/data_reader.cpp
+
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.i"
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/GBDT-PL/src/io/data_reader.cpp > CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.i
+
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.s"
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/GBDT-PL/src/io/data_reader.cpp -o CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.s
+
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.requires:
+
+.PHONY : CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.requires
+
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.provides: CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GBDT-PL.dir/build.make CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.provides.build
+.PHONY : CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.provides
+
+CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.provides.build: CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o
+
+
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o: ../src/interface/interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o -c /data1/shiyu/GBDT-PL/src/interface/interface.cpp
 
 CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o: ../src/booster/threshold_finder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o -c /data1/shiyu/GBDT-PL/src/booster/threshold_finder.cpp
 
 CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o.provides.build: CMakeF
 
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o: ../src/booster/booster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o -c /data1/shiyu/GBDT-PL/src/booster/booster.cpp
 
 CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o.provides.build: CMakeFiles/GBDT
 
 CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.o: ../src/metric/metric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.o -c /data1/shiyu/GBDT-PL/src/metric/metric.cpp
 
 CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.i: cmake_force
@@ -179,7 +203,7 @@ CMakeFiles/GBDT-PL.dir/src/metric/metric.cpp.o.provides.build: CMakeFiles/GBDT-P
 
 CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.o: ../src/metric/ndcg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.o -c /data1/shiyu/GBDT-PL/src/metric/ndcg.cpp
 
 CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.i: cmake_force
@@ -203,7 +227,7 @@ CMakeFiles/GBDT-PL.dir/src/metric/ndcg.cpp.o.provides.build: CMakeFiles/GBDT-PL.
 
 CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.o: ../src/metric/auc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.o -c /data1/shiyu/GBDT-PL/src/metric/auc.cpp
 
 CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.i: cmake_force
@@ -227,7 +251,7 @@ CMakeFiles/GBDT-PL.dir/src/metric/auc.cpp.o.provides.build: CMakeFiles/GBDT-PL.d
 
 CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o: ../src/metric/rmse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o -c /data1/shiyu/GBDT-PL/src/metric/rmse.cpp
 
 CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.i: cmake_force
@@ -251,7 +275,7 @@ CMakeFiles/GBDT-PL.dir/src/metric/rmse.cpp.o.provides.build: CMakeFiles/GBDT-PL.
 
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o: ../src/tree/level_wise_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o -c /data1/shiyu/GBDT-PL/src/tree/level_wise_tree.cpp
 
 CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.i: cmake_force
@@ -275,7 +299,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/level_wise_tree.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o: ../src/tree/tree_predictors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o -c /data1/shiyu/GBDT-PL/src/tree/tree_predictors.cpp
 
 CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.i: cmake_force
@@ -299,7 +323,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/tree_predictors.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o: ../src/tree/leaf_wise_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o -c /data1/shiyu/GBDT-PL/src/tree/leaf_wise_tree.cpp
 
 CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.i: cmake_force
@@ -323,7 +347,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/leaf_wise_tree.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o: ../src/tree/tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o -c /data1/shiyu/GBDT-PL/src/tree/tree.cpp
 
 CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.i: cmake_force
@@ -347,7 +371,7 @@ CMakeFiles/GBDT-PL.dir/src/tree/tree.cpp.o.provides.build: CMakeFiles/GBDT-PL.di
 
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o: ../src/node/linear_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o -c /data1/shiyu/GBDT-PL/src/node/linear_node.cpp
 
 CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.i: cmake_force
@@ -371,7 +395,7 @@ CMakeFiles/GBDT-PL.dir/src/node/linear_node.cpp.o.provides.build: CMakeFiles/GBD
 
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o: ../src/node/additive_linear_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o -c /data1/shiyu/GBDT-PL/src/node/additive_linear_node.cpp
 
 CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.i: cmake_force
@@ -395,7 +419,7 @@ CMakeFiles/GBDT-PL.dir/src/node/additive_linear_node.cpp.o.provides.build: CMake
 
 CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.o: ../src/argmax/argmax.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.o -c /data1/shiyu/GBDT-PL/src/argmax/argmax.cpp
 
 CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.i: cmake_force
@@ -419,7 +443,7 @@ CMakeFiles/GBDT-PL.dir/src/argmax/argmax.cpp.o.provides.build: CMakeFiles/GBDT-P
 
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o: ../src/features/ordered_feature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o -c /data1/shiyu/GBDT-PL/src/features/ordered_feature.cpp
 
 CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.i: cmake_force
@@ -443,7 +467,7 @@ CMakeFiles/GBDT-PL.dir/src/features/ordered_feature.cpp.o.provides.build: CMakeF
 
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o: ../src/features/sparse_linear_bin_feature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o -c /data1/shiyu/GBDT-PL/src/features/sparse_linear_bin_feature.cpp
 
 CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.i: cmake_force
@@ -467,7 +491,7 @@ CMakeFiles/GBDT-PL.dir/src/features/sparse_linear_bin_feature.cpp.o.provides.bui
 
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o: ../src/features/linear_bin_feature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o -c /data1/shiyu/GBDT-PL/src/features/linear_bin_feature.cpp
 
 CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.i: cmake_force
@@ -491,7 +515,7 @@ CMakeFiles/GBDT-PL.dir/src/features/linear_bin_feature.cpp.o.provides.build: CMa
 
 CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.o: ../src/objective/objective.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.o -c /data1/shiyu/GBDT-PL/src/objective/objective.cpp
 
 CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.i: cmake_force
@@ -515,7 +539,7 @@ CMakeFiles/GBDT-PL.dir/src/objective/objective.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.o: ../src/objective/multiclass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.o -c /data1/shiyu/GBDT-PL/src/objective/multiclass.cpp
 
 CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.i: cmake_force
@@ -539,7 +563,7 @@ CMakeFiles/GBDT-PL.dir/src/objective/multiclass.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.o: ../src/objective/binary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.o -c /data1/shiyu/GBDT-PL/src/objective/binary.cpp
 
 CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.i: cmake_force
@@ -563,7 +587,7 @@ CMakeFiles/GBDT-PL.dir/src/objective/binary.cpp.o.provides.build: CMakeFiles/GBD
 
 CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o: ../src/objective/regression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o -c /data1/shiyu/GBDT-PL/src/objective/regression.cpp
 
 CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.i: cmake_force
@@ -587,7 +611,7 @@ CMakeFiles/GBDT-PL.dir/src/objective/regression.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.o: ../src/histogram/row_histogram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.o -c /data1/shiyu/GBDT-PL/src/histogram/row_histogram.cpp
 
 CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.i: cmake_force
@@ -611,7 +635,7 @@ CMakeFiles/GBDT-PL.dir/src/histogram/row_histogram.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o: ../src/datamat/datamat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o -c /data1/shiyu/GBDT-PL/src/datamat/datamat.cpp
 
 CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.i: cmake_force
@@ -635,7 +659,7 @@ CMakeFiles/GBDT-PL.dir/src/datamat/datamat.cpp.o.provides.build: CMakeFiles/GBDT
 
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: CMakeFiles/GBDT-PL.dir/flags.make
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o: ../src/datamat/data_partition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o -c /data1/shiyu/GBDT-PL/src/datamat/data_partition.cpp
 
 CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.i: cmake_force
@@ -660,6 +684,7 @@ CMakeFiles/GBDT-PL.dir/src/datamat/data_partition.cpp.o.provides.build: CMakeFil
 # Object files for target GBDT-PL
 GBDT__PL_OBJECTS = \
 "CMakeFiles/GBDT-PL.dir/src/main.cpp.o" \
+"CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o" \
 "CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o" \
 "CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o" \
 "CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o" \
@@ -689,6 +714,7 @@ GBDT__PL_OBJECTS = \
 GBDT__PL_EXTERNAL_OBJECTS =
 
 ../GBDT-PL: CMakeFiles/GBDT-PL.dir/src/main.cpp.o
+../GBDT-PL: CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o
 ../GBDT-PL: CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o
 ../GBDT-PL: CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o
 ../GBDT-PL: CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o
@@ -718,7 +744,7 @@ GBDT__PL_EXTERNAL_OBJECTS =
 ../GBDT-PL: /data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_intel_thread.a
 ../GBDT-PL: /data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_core.a
 ../GBDT-PL: CMakeFiles/GBDT-PL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable ../GBDT-PL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data1/shiyu/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable ../GBDT-PL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GBDT-PL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -727,6 +753,7 @@ CMakeFiles/GBDT-PL.dir/build: ../GBDT-PL
 .PHONY : CMakeFiles/GBDT-PL.dir/build
 
 CMakeFiles/GBDT-PL.dir/requires: CMakeFiles/GBDT-PL.dir/src/main.cpp.o.requires
+CMakeFiles/GBDT-PL.dir/requires: CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o.requires
 CMakeFiles/GBDT-PL.dir/requires: CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o.requires
 CMakeFiles/GBDT-PL.dir/requires: CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o.requires
 CMakeFiles/GBDT-PL.dir/requires: CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o.requires

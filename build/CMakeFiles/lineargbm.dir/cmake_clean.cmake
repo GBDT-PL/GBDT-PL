@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lineargbm.dir/src/main.cpp.o"
+  "CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o"
   "CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o"
   "CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o"
   "CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o"

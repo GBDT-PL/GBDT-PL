@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GBDT-PL.dir/src/main.cpp.o"
+  "CMakeFiles/GBDT-PL.dir/src/io/data_reader.cpp.o"
   "CMakeFiles/GBDT-PL.dir/src/interface/interface.cpp.o"
   "CMakeFiles/GBDT-PL.dir/src/booster/threshold_finder.cpp.o"
   "CMakeFiles/GBDT-PL.dir/src/booster/booster.cpp.o"

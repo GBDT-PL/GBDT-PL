@@ -9,6 +9,7 @@ CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/argmax.h
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/booster.hpp
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../include/metric.hpp
@@ -30,6 +31,7 @@ CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o: ../src/booster/thre
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/objective.hpp
@@ -38,11 +40,13 @@ CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../include/split_info
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../src/datamat/data_partition.cpp
 
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o: ../include/booster_config.hpp
+CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o: ../src/datamat/datamat.cpp
 
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../include/booster_config.hpp
+CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../include/row_histogram.hpp
@@ -51,6 +55,7 @@ CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../src/features/
 
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../include/booster_config.hpp
+CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../include/row_histogram.hpp
@@ -59,6 +64,7 @@ CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../src/features/ord
 
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/booster_config.hpp
+CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../include/row_histogram.hpp
@@ -73,6 +79,7 @@ CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/alignment_all
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/booster.hpp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/interface.hpp
@@ -84,10 +91,14 @@ CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/split_info.hp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../include/tree.hpp
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../src/interface/interface.cpp
 
+CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o: ../include/data_reader.hpp
+CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o: ../src/io/data_reader.cpp
+
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/booster.hpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../include/metric.hpp
@@ -117,6 +128,7 @@ CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o: ../src/metric/rmse.cpp
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../include/node.hpp
@@ -128,6 +140,7 @@ CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../src/node/additi
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../include/node.hpp
@@ -159,6 +172,7 @@ CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o: ../src/objective/regres
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../include/node.hpp
@@ -171,6 +185,7 @@ CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../src/tree/leaf_wise_tr
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../include/node.hpp
@@ -183,6 +198,7 @@ CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../src/tree/level_wise_
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../include/node.hpp
@@ -195,6 +211,7 @@ CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../src/tree/tree.cpp
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/alignment_allocator.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/booster_config.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/data_partition.hpp
+CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/data_reader.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/datamat.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/feature.hpp
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../include/node.hpp

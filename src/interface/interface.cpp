@@ -117,3 +117,11 @@ int Train(LinearGBM gbm) {
 int LinearGBMPrintBoosterConfig(LinearGBMBoosterConfig booster_config) {
     ((BoosterConfig*)booster_config)->PrintAllParams();
 }
+
+int LinearGBMPredict(LinearGBM booster, LinearGBMDataMat test_data, double** preds, int *num_data) {  
+    DataMat &test_dataa = *(DataMat*)(test_data);
+    test_dataa.predict_values.resize(test_dataa.num_data, 0.0);
+    ((Booster*)booster)->Predict(test_dataa, test_dataa.predict_values);
+    *preds = test_dataa.predict_values.data(); 
+    *num_data = test_dataa.num_data;
+}

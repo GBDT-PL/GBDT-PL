@@ -24,6 +24,6 @@ extern "C" int Train(LinearGBM gbm);
 
 extern "C" int LinearGBMPrintBoosterConfig(LinearGBMBoosterConfig booster_config);
 
-
+extern "C" int LinearGBMPredict(LinearGBM booster, LinearGBMDataMat test_data, double** preds, int* num_data);
 
 #endif /* interface_h */
