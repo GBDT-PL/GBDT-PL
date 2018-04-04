@@ -1,5 +1,5 @@
 # News
-04/04/2018 Speedup CSV file preprocess. Python interface for Linux is available now. 
+04/04/2018: Speedup CSV file preprocess. Python interface for Linux is available now. 
 
 # GBDT-PL
 We extend gradient boosting to use piecewise linear regression trees (PL Trees), 
