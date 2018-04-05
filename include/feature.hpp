@@ -83,8 +83,6 @@ public:
     double mkl_time;
     double load_matrix_time;
     
-    vector<double> bin_values;
-    
     //virtual function<double()> GetLeafDataIterator(int leaf_id) { return ([] () { return 0.0; }); }
     
     /*
@@ -175,6 +173,8 @@ public:
     virtual const uint8_t* GetLocalData(int leaf_id, int leaf_start) { return nullptr; }
     
     virtual void set_hist_info(bool redundantt, int cur_varss, int prev_varss) {}
+    
+    virtual double* get_feature_values() { return nullptr; }
 };
 
 class LinearBinFeature : public OrderedFeature {
@@ -217,15 +217,17 @@ protected:
     bool redundant; 
     
 public:
-    vector<uint8_t> data;
-    vector<int> bin_counts;
+    vector<uint8_t> &data;
+    vector<int> &bin_counts;
+    vector<double> &bin_values;  
     
     //virtual function<double()> GetLeafDataIterator(int leaf_id);
     
     LinearBinFeature(DataMat* _train_set, bool _is_categorical,
                             int _feature_index, BoosterConfig* _booster_config,
                             const std::vector<int>& _global_leaf_starts, const std::vector<int>& _global_leaf_ends,
-                            int _num_vars);
+                            int _num_vars, vector<uint8_t> & _data,
+                            vector<int>& _bin_counts, vector<double>& _bin_values);
     
     virtual int SplitIndex(uint8_t threshold, int leaf_id, int split_start, int split_end,
                    uint8_t *_bit_vector,
@@ -266,6 +268,8 @@ public:
         cur_num_vars = cur_varss;
         prev_num_vars = prev_varss; 
     }
+    
+    double* get_feature_values() { return bin_values.data(); } 
 };
 
 class SparseLinearBinFeature : public LinearBinFeature {
@@ -274,7 +278,8 @@ public:
     SparseLinearBinFeature(DataMat* _train_set, bool _is_categorical,
                            int _feature_index, BoosterConfig* _booster_config,
                            const std::vector<int>& _global_leaf_starts, const std::vector<int>& _global_leaf_ends,
-                           int _num_vars);
+                           int _num_vars, vector<uint8_t> & _data,
+                           vector<int>& _bin_counts, vector<double>& _bin_values);
     
     void PrepareHistogram(int leaf_id, bool use_cache,
                           RowHistogram* cur, RowHistogram* sibling,

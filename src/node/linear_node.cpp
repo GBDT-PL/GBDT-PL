@@ -56,7 +56,7 @@ void LinearNode::UpdateTrainScore(const vector<int> &indices, double *scores,
         vector<double*> bin_valuess(leaf_num_features);
         for(int j = 0; j < leaf_num_features; ++j) {
             data_bins[j] = (static_cast<LinearBinFeature*>(features[linear_model_features[j]]))->GetLocalData(leaf_id, leaf_starts[leaf_id]);   
-            bin_valuess[j] = features[linear_model_features[j]]->bin_values.data();
+            bin_valuess[j] = features[linear_model_features[j]]->get_feature_values();
         }
         
         int leaf_start = leaf_starts[leaf_id], leaf_end = leaf_ends[leaf_id];
@@ -180,7 +180,7 @@ void LinearNode::PrepareBinGradients(DataPartition *data_partition, BoosterConfi
         
         for(int i = 0; i < num_vars; ++i) {
             feature_bins[i] = features[linear_model_features[i]]->GetLocalData(leaf_id, leaf_start);
-            feature_bin_values[i] = features[linear_model_features[i]]->bin_values.data();
+            feature_bin_values[i] = features[linear_model_features[i]]->get_feature_values();
         }
         
         float *bin_gradients_ptr = bin_gradients.data();
@@ -221,7 +221,7 @@ void LinearNode::PrepareBinGradients(DataPartition *data_partition, BoosterConfi
         
         for(int i = 0; i < num_vars; ++i) {
             feature_bins[i] = features[linear_model_features[i]]->GetLocalData(leaf_id, leaf_start);
-            feature_bin_values[i] = features[linear_model_features[i]]->bin_values.data();
+            feature_bin_values[i] = features[linear_model_features[i]]->get_feature_values();
         }
         
         float *bin_gradient_ptr = bin_gradients.data();

@@ -19,10 +19,12 @@ LinearBinFeature::LinearBinFeature(DataMat* _train_set, bool _is_categorical,
                                    int _feature_index, BoosterConfig* _booster_config,
                                    const std::vector<int> &_global_leaf_starts,
                                    const std::vector<int> &_global_leaf_ends,
-                                   int _num_vars):
+                                   int _num_vars, vector<uint8_t>& _data,
+                                   vector<int> & _bin_counts, vector<double> & _bin_values):
 OrderedFeature(_train_set, _is_categorical, _feature_index, _booster_config),
 global_leaf_starts(_global_leaf_starts), global_leaf_ends(_global_leaf_ends),
-bin_boundaries(_train_set->bin_boundaries[_feature_index]) {
+bin_boundaries(_train_set->bin_boundaries[_feature_index]), data(_data), bin_counts(_bin_counts),
+bin_values(_bin_values) {
     train_set = _train_set;
     num_bins = train_set->num_bins_per_feature[feature_index];
     bin_counts.resize(num_bins, 0);
@@ -995,9 +997,9 @@ int LinearBinFeature::SplitIndex(uint8_t threshold, int leaf_id, int split_start
 }
 
 void LinearBinFeature::BeforeTrain() {  
-    for(int i = 0; i < num_bins; ++i) {
+    /*for(int i = 0; i < num_bins; ++i) {
         bin_values[i] /= bin_counts[i];
-    }
+    }*/
 }
 
 /*void LinearBinFeature::SumUpLeafPredictValues(int leaf_id, const int *data_indices,

@@ -14,9 +14,10 @@
 SparseLinearBinFeature::SparseLinearBinFeature(DataMat* _train_set, bool _is_categorical,
                                                int _feature_index, BoosterConfig* _booster_config,
                                                const std::vector<int>& _global_leaf_starts, const std::vector<int>& _global_leaf_ends,
-                                               int _num_vars):
-LinearBinFeature(_train_set, _is_categorical, _feature_index, _booster_config, _global_leaf_starts,
-                 _global_leaf_ends, _num_vars) {}
+                                               int _num_vars, vector<uint8_t>& _data,
+                                               vector<int> & _bin_counts, vector<double> & _bin_values):    
+LinearBinFeature(_train_set, _is_categorical, _feature_index, _booster_config, _global_leaf_starts, 
+                 _global_leaf_ends, _num_vars, _data, _bin_counts, _bin_values) {}
 
 void SparseLinearBinFeature::PrepareHistogram(int leaf_id, bool use_cache, RowHistogram *cur,
                                               RowHistogram *sibling, fvec64 &bin_gradients, bool need_augment) {

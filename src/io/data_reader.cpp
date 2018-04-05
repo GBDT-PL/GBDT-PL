@@ -46,8 +46,6 @@ void DataReader::Read(int num_threads) {
     }
     label.resize(num_data, 0.0);
     fin_line_count.close();
-    cout << "num_data " << num_data << endl;
-    cout << "num_features " << num_features << endl;
     
     ifstream fin(file_path);
     string line;
@@ -60,11 +58,9 @@ void DataReader::Read(int num_threads) {
     vector<string>* buffer_ptr_1 = &buffer1;
     vector<string>* buffer_ptr_2 = &buffer2;
     
-    cout << "start read" << endl;
     size_t cur_total_lines = 0;
     while(cur_total_lines < num_data) { 
-        size_t chunk_size = (buffer_ptr_1->size() + num_threads - 2) / (num_threads - 1);
-        //cout << chunk_size << endl;
+        size_t chunk_size = (buffer_ptr_1->size() + num_threads - 2) / (num_threads - 1); 
 #pragma omp parallel for schedule(static, 1) num_threads(num_threads)
         for(int tid = 0; tid < num_threads; ++tid) {
             if(tid == 0) {
@@ -88,9 +84,7 @@ void DataReader::Read(int num_threads) {
                             if(fid > 0) {
                                 feature_values[fid - 1][cur_total_lines + i] = value;
                             }
-                            else {
-				//revert 1/3 labels
-				//if((cur_total_lines + i) % 3 == 0) { value = 1 - value; }
+                            else {	
                                 label[cur_total_lines + i] = value;
                             }
                             begin = j + 1;
@@ -135,9 +129,7 @@ void DataReader::ReadByRow(int num_threads) {
         feature_values[i].resize(num_features, 0.0);
     }
     label.resize(num_data, 0.0);
-    fin_line_count.close();
-    cout << "num_data " << num_data << endl;
-    cout << "num_features " << num_features << endl;
+    fin_line_count.close(); 
 
     ifstream fin(file_path);
     string line;
@@ -149,8 +141,7 @@ void DataReader::ReadByRow(int num_threads) {
     }
     vector<string>* buffer_ptr_1 = &buffer1;
     vector<string>* buffer_ptr_2 = &buffer2;
-
-    cout << "start read" << endl;
+ 
     size_t cur_total_lines = 0;
     while(cur_total_lines < num_data) {
         size_t chunk_size = (buffer_ptr_1->size() + num_threads - 2) / (num_threads - 1);
@@ -197,5 +188,5 @@ void DataReader::ReadByRow(int num_threads) {
         cur_total_lines += buffer_ptr_1->size();
         buffer_ptr_1->clear();
         std::swap(buffer_ptr_1, buffer_ptr_2);
-    }
+    } 
 }

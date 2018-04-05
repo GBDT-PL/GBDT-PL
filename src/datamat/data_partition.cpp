@@ -28,7 +28,7 @@ all_gradients(gradientss) {
     data_indices_in_right.resize(_train_set->num_data, -1);
     leaf_starts.resize(2 * _booster_config->max_leaf + 1, -1);      
     leaf_ends.resize(2 * _booster_config->max_leaf + 1, -1);
-    
+
     pred_values.resize(train_set->num_data, 0.0);   
     
     leaf_starts[0] = 0;
@@ -40,7 +40,7 @@ all_gradients(gradientss) {
     else {
         num_data_aligned = (train_set->num_data / 4 + 1) * 4;
     }
-    
+
     bit_vector.resize(train_set->num_data + 8, 0x00);
     
 #pragma omp parallel for schedule(static) num_threads(booster_config->num_threads)
@@ -60,7 +60,7 @@ all_gradients(gradientss) {
     
     left_copy_offsets.resize(booster_config->num_threads + 1, 0);
     right_copy_offsets.resize(booster_config->num_threads + 1, 0);
-    
+
     int least_bin = booster_config->max_bin;
     least_bin_feature = 0;
     for(int i = 0; i < train_set->num_feature; ++i) {
@@ -72,20 +72,26 @@ all_gradients(gradientss) {
             }
         }
     }
-    
+
 #pragma omp parallel for schedule(static) num_threads(booster_config->num_threads)
     for(int i = 0; i < train_set->num_feature; ++i) {
-        if(train_set->sparse_ratio[i] <= booster_config->sparse_threshold && i != least_bin_feature) {
+        /*if(train_set->sparse_ratio[i] <= booster_config->sparse_threshold && i != least_bin_feature) {
             features[i] = new SparseLinearBinFeature(train_set, false, i, booster_config,
-                                                            leaf_starts, leaf_ends, booster_config->num_vars);
+                                                     leaf_starts, leaf_ends, booster_config->num_vars,
+                                                     train_set->get_bin_data(i),
+                                                     train_set->get_bin_count(i),
+                                                     train_set->get_bin_value(i)) ;
         }
-        else {
+        else {*/
             features[i] = new LinearBinFeature(train_set, false, i, booster_config,
-                                           leaf_starts, leaf_ends, booster_config->num_vars);
-        }
-    }
-    
-    PushDataIntoFeatures(); 
+                                           leaf_starts, leaf_ends, booster_config->num_vars,    
+                                               train_set->get_bin_data(i),
+                                               train_set->get_bin_count(i),
+                                               train_set->get_bin_value(i)); 
+        //}
+    } 
+
+    //PushDataIntoFeatures();
     
     int max_var = booster_config->num_vars;
     if(booster_config->leaf_type == "additive_linear") {

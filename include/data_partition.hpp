@@ -109,7 +109,7 @@ public:
     
     uint8_t* get_feature_bin(int feature_index) { return features[feature_index]->get_bins(); }
     
-    double* get_feature_values(int feature_index) { return features[feature_index]->bin_values.data(); }
+    double* get_feature_values(int feature_index) { return features[feature_index]->get_feature_values(); }
     
     const vector<uint8_t>& get_bit_vector() { return bit_vector; }
     

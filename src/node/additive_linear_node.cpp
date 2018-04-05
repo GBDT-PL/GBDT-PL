@@ -350,7 +350,7 @@ void AdditiveLinearNode::AfterTrain(DataPartition *data_partition, int cur_class
         
         for(int i = 0; i < num_vars; ++i) {
             fbins.push_back(features[linear_model_features[i]]->GetLocalData(leaf_id, leaf_start));
-            fvalues.push_back(features[linear_model_features[i]]->bin_values.data());               
+            fvalues.push_back(features[linear_model_features[i]]->get_feature_values());               
         }
         
         const float* gradients = data_partition->get_all_gradients(cur_class);
@@ -415,7 +415,7 @@ void AdditiveLinearNode::UpdateTrainScore(const vector<int> &indices, double *sc
         
         for(int j = 0; j < leaf_num_features; ++j) {
             data_bins[j] = (static_cast<LinearBinFeature*>(features[linear_model_features[j]]))->GetLocalData(leaf_id, leaf_start);
-            bin_valuess[j] = features[linear_model_features[j]]->bin_values.data();
+            bin_valuess[j] = features[linear_model_features[j]]->get_feature_values();
         }
         
         double lr = booster_config->learning_rate;

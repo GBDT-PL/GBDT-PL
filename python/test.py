@@ -6,8 +6,8 @@ if __name__ == "__main__":
               "max_var":5, "grow_by":"leaf", "leaf_type":"additive_linear", "max_depth":5, "verbose":1, "sparse_ratio":0.0,
               "boosting_type":"gbdt", "goss_alpha":0.0, "goss_beta":0.0}
 
-    train_data = gbdtpl.DataMat("train", params, 0, -1, "../../LinearGBM2/data/small_higgs_train.csv")
-    test_data = gbdtpl.DataMat("test", params, 0, -1, "../../LinearGBM2/data/small_higgs_test.csv", train_data)
+    train_data = gbdtpl.DataMat("train", params, 0, -1, "../../../LinearGBM2/data/small_higgs_train.csv")
+    test_data = gbdtpl.DataMat("test", params, 0, -1, "../../../LinearGBM2/data/small_higgs_test.csv", train_data)
     booster = gbdtpl.Booster(params, train_data, test_data) 
     booster.Train()
     results = booster.Predict(test_data)

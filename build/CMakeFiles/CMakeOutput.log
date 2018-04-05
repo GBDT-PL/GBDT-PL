@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/data1/shiyu/GBDT-PL/build/CMakeFiles/3.3.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/data1/shiyu/git/GBDT-PL/build/CMakeFiles/3.3.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,33 +23,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/data1/shiyu/GBDT-PL/build/CMakeFiles/3.3.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/data1/shiyu/git/GBDT-PL/build/CMakeFiles/3.3.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_a6124/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_a6124.dir/build.make CMakeFiles/cmTC_a6124.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_a6124.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_a6124.dir/testCCompiler.c.o   -c /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_a6124
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6124.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_a6124.dir/testCCompiler.c.o  -o cmTC_a6124 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_92b49/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_92b49.dir/build.make CMakeFiles/cmTC_92b49.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_92b49.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_92b49.dir/testCCompiler.c.o   -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_92b49
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92b49.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_92b49.dir/testCCompiler.c.o  -o cmTC_92b49 -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_cdbb8/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_cdbb8.dir/build.make CMakeFiles/cmTC_cdbb8.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_cdbb8
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdbb8.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o  -o cmTC_cdbb8 -rdynamic  
+Run Build Command:"/usr/bin/gmake" "cmTC_29c14/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_29c14.dir/build.make CMakeFiles/cmTC_29c14.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_29c14
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29c14.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o  -o cmTC_29c14 -rdynamic  
 使用内建 specs。
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -59,23 +59,23 @@ COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
 gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdbb8' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cdbb8 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_29c14' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_29c14 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_cdbb8/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_cdbb8.dir/build.make CMakeFiles/cmTC_cdbb8.dir/build]
-  ignore line: [gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”]
-  ignore line: [Building C object CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_cdbb8]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdbb8.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o  -o cmTC_cdbb8 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_29c14/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_29c14.dir/build.make CMakeFiles/cmTC_29c14.dir/build]
+  ignore line: [gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.3/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_29c14]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_29c14.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o  -o cmTC_29c14 -rdynamic  ]
   ignore line: [使用内建 specs。]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -85,8 +85,8 @@ Parsed C implicit link information from above output:
   ignore line: [gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cdbb8' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cdbb8 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_29c14' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_29c14 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -98,7 +98,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cdbb8] ==> ignore
+    arg [cmTC_29c14] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -114,7 +114,7 @@ Parsed C implicit link information from above output:
     arg [-L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin] ==> dir [/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin]
     arg [-L.] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_cdbb8.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_29c14.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -149,17 +149,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_1bbb7/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_1bbb7.dir/build.make CMakeFiles/cmTC_1bbb7.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1bbb7.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_1bbb7.dir/feature_tests.c.o   -c /data1/shiyu/GBDT-PL/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1bbb7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bbb7.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_1bbb7.dir/feature_tests.c.o  -o cmTC_1bbb7 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_9109f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_9109f.dir/build.make CMakeFiles/cmTC_9109f.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9109f.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_9109f.dir/feature_tests.c.o   -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_9109f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9109f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_9109f.dir/feature_tests.c.o  -o cmTC_9109f -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -169,17 +169,17 @@ gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_f7198/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_f7198.dir/build.make CMakeFiles/cmTC_f7198.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_f7198.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_f7198.dir/feature_tests.c.o   -c /data1/shiyu/GBDT-PL/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f7198
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f7198.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_f7198.dir/feature_tests.c.o  -o cmTC_f7198 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_75f7a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_75f7a.dir/build.make CMakeFiles/cmTC_75f7a.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_75f7a.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_75f7a.dir/feature_tests.c.o   -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_75f7a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75f7a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_75f7a.dir/feature_tests.c.o  -o cmTC_75f7a -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -189,17 +189,17 @@ gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_045d8/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_045d8.dir/build.make CMakeFiles/cmTC_045d8.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_045d8.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_045d8.dir/feature_tests.c.o   -c /data1/shiyu/GBDT-PL/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_045d8
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_045d8.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTC_045d8.dir/feature_tests.c.o  -o cmTC_045d8 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_e7399/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e7399.dir/build.make CMakeFiles/cmTC_e7399.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e7399.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_e7399.dir/feature_tests.c.o   -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e7399
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7399.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_e7399.dir/feature_tests.c.o  -o cmTC_e7399 -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -207,30 +207,30 @@ gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_7cbbb/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_7cbbb.dir/build.make CMakeFiles/cmTC_7cbbb.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_7cbbb.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_7cbbb.dir/testCXXCompiler.cxx.o -c /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_7cbbb
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cbbb.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_7cbbb.dir/testCXXCompiler.cxx.o  -o cmTC_7cbbb -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_dbcb9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_dbcb9.dir/build.make CMakeFiles/cmTC_dbcb9.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_dbcb9.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_dbcb9.dir/testCXXCompiler.cxx.o -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_dbcb9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbcb9.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_dbcb9.dir/testCXXCompiler.cxx.o  -o cmTC_dbcb9 -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_9185f/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_9185f.dir/build.make CMakeFiles/cmTC_9185f.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_9185f
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9185f.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9185f -rdynamic  
+Run Build Command:"/usr/bin/gmake" "cmTC_6da15/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_6da15.dir/build.make CMakeFiles/cmTC_6da15.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_6da15
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da15.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6da15 -rdynamic  
 使用内建 specs。
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
@@ -240,23 +240,23 @@ COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper
 gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) 
 COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9185f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9185f /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6da15' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6da15 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_9185f/fast"]
-  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_9185f.dir/build.make CMakeFiles/cmTC_9185f.dir/build]
-  ignore line: [gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”]
-  ignore line: [Building CXX object CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_9185f]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9185f.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9185f -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/gmake" "cmTC_6da15/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTC_6da15.dir/build.make CMakeFiles/cmTC_6da15.dir/build]
+  ignore line: [gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”]
+  ignore line: [Building CXX object CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.3/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_6da15]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da15.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6da15 -rdynamic  ]
   ignore line: [使用内建 specs。]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/lto-wrapper]
@@ -266,8 +266,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.5/:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin/:/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin/:./:/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9185f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9185f /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6da15' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_6da15 /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7 -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin -L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin -L. -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../.. CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crtn.o]
     arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.5/collect2] ==> ignore
     arg [--build-id] ==> ignore
     arg [--no-add-needed] ==> ignore
@@ -279,7 +279,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_9185f] ==> ignore
+    arg [cmTC_6da15] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../../../lib64/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/crtbegin.o] ==> ignore
@@ -295,7 +295,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin] ==> dir [/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin]
     arg [-L.] ==> ignore
     arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.5/../../..]
-    arg [CMakeFiles/cmTC_9185f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_6da15.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -328,17 +328,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_14fa6/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_14fa6.dir/build.make CMakeFiles/cmTC_14fa6.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_14fa6.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_14fa6.dir/feature_tests.cxx.o -c /data1/shiyu/GBDT-PL/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_14fa6
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14fa6.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_14fa6.dir/feature_tests.cxx.o  -o cmTC_14fa6 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_75d9b/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_75d9b.dir/build.make CMakeFiles/cmTC_75d9b.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_75d9b.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTC_75d9b.dir/feature_tests.cxx.o -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_75d9b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75d9b.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_75d9b.dir/feature_tests.cxx.o  -o cmTC_75d9b -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -401,17 +401,17 @@ gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_9178e/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_9178e.dir/build.make CMakeFiles/cmTC_9178e.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_9178e.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_9178e.dir/feature_tests.cxx.o -c /data1/shiyu/GBDT-PL/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_9178e
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9178e.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_9178e.dir/feature_tests.cxx.o  -o cmTC_9178e -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_3d235/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3d235.dir/build.make CMakeFiles/cmTC_3d235.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_3d235.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_3d235.dir/feature_tests.cxx.o -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_3d235
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d235.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_3d235.dir/feature_tests.cxx.o  -o cmTC_3d235 -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -474,17 +474,17 @@ gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_741b9/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_741b9.dir/build.make CMakeFiles/cmTC_741b9.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_741b9.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_741b9.dir/feature_tests.cxx.o -c /data1/shiyu/GBDT-PL/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_741b9
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_741b9.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTC_741b9.dir/feature_tests.cxx.o  -o cmTC_741b9 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_9b3ef/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_9b3ef.dir/build.make CMakeFiles/cmTC_9b3ef.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_9b3ef.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_9b3ef.dir/feature_tests.cxx.o -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_9b3ef
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b3ef.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_9b3ef.dir/feature_tests.cxx.o  -o cmTC_9b3ef -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -545,17 +545,17 @@ gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_fdb28/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_fdb28.dir/build.make CMakeFiles/cmTC_fdb28.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_fdb28.dir/src.c.o
-/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_fdb28.dir/src.c.o   -c /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_fdb28
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdb28.dir/link.txt --verbose=1
-/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_fdb28.dir/src.c.o  -o cmTC_fdb28 -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_3aad5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_3aad5.dir/build.make CMakeFiles/cmTC_3aad5.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3aad5.dir/src.c.o
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_3aad5.dir/src.c.o   -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_3aad5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aad5.dir/link.txt --verbose=1
+/usr/bin/cc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_3aad5.dir/src.c.o  -o cmTC_3aad5 -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 Source file was:
 
@@ -569,17 +569,17 @@ int main() {
 }
 
 Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeded with the following output:
-Change Dir: /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp
+Change Dir: /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/gmake" "cmTC_c283a/fast"
-/usr/bin/gmake -f CMakeFiles/cmTC_c283a.dir/build.make CMakeFiles/cmTC_c283a.dir/build
-gmake[1]: 进入目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_c283a.dir/src.cxx.o
-/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_c283a.dir/src.cxx.o -c /data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp/src.cxx
-Linking CXX executable cmTC_c283a
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c283a.dir/link.txt --verbose=1
-/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_c283a.dir/src.cxx.o  -o cmTC_c283a -rdynamic 
-gmake[1]: 离开目录“/data1/shiyu/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/gmake" "cmTC_933ab/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_933ab.dir/build.make CMakeFiles/cmTC_933ab.dir/build
+gmake[1]: 进入目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_933ab.dir/src.cxx.o
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_933ab.dir/src.cxx.o -c /data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_933ab
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_933ab.dir/link.txt --verbose=1
+/usr/bin/c++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_933ab.dir/src.cxx.o  -o cmTC_933ab -rdynamic 
+gmake[1]: 离开目录“/data1/shiyu/git/GBDT-PL/build/CMakeFiles/CMakeTmp”
 
 Source file was:
 

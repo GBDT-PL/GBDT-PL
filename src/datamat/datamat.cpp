@@ -27,48 +27,12 @@ booster_config(_booster_config), name(_name) {
     reference = _reference;
     
     if(reference != nullptr) {
-        /*csv_fname = fname;
-        ifstream fin(csv_fname);
-        double fvalue;
-        label.clear();
-        queries.clear();
-        int data_idx = 0;
-        int feature_idx = 0;
-        char delimiter = '\0';
-        num_feature = reference->num_feature;   
-        unbined_data.clear();
-        while(fin >> fvalue) {
-            if(data_idx >= unbined_data.size()) {
-                unbined_data.emplace_back(reference->num_feature, 0.0);
-            }
-            
-            if(feature_idx == label_idx) {
-                label.push_back(fvalue);
-            }
-            else if(feature_idx == query_idx) {
-                queries.push_back(fvalue);          
-            }
-            else {
-                int true_feature_idx = reference->feature_idx_map[feature_idx];
-                if(true_feature_idx != -1) {
-                    unbined_data[data_idx][true_feature_idx] = fvalue;
-                }
-            }
-            delimiter = fin.get();
-            if(delimiter == ',') {
-                ++feature_idx;
-            }
-            else if(delimiter == '\n' || delimiter == '\r') {
-                feature_idx = 0;
-                ++data_idx; 
-            }
-        }
-        num_data = data_idx; */
-	csv_fname = fname;
+        csv_fname = fname;
         DataReader reader(fname, 50000, unbined_data, label);
         reader.ReadByRow(booster_config.num_threads);
         num_feature = reader.get_num_features();
         num_data = reader.get_num_data();
+	cout << "finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl; 
     }
     else {
         vector<vector<double>> feature_matrix;
@@ -84,82 +48,11 @@ booster_config(_booster_config), name(_name) {
         }
         sparse_ratio.resize(num_feature, 0.0);
         
-            /*csv_fname = fname;
-            ifstream fin(fname);
-            double fvalue;
-            label.clear();
-            queries.clear();
-            vector<vector<double>> feature_matrix;
-            int data_idx = 0;
-            int feature_idx = 0;
-            char delimiter = '\0';
-            int cur_feature = 0;
-            while(fin >> fvalue) {
-                if(feature_idx == label_idx) {
-                    label.push_back(fvalue);
-                    if(feature_idx_map.size() <= feature_idx) {
-                        int cur_size = static_cast<int>(feature_idx_map.size());
-                        for(int i = cur_size; i < feature_idx; ++i) {
-                            feature_idx_map.push_back(-1);
-                        }
-                        feature_idx_map.push_back(-1);
-                    }
-                }
-                else if(feature_idx == query_idx) {
-                    queries.push_back(static_cast<int>(fvalue));
-                    if(feature_idx_map.size() <= feature_idx) {
-                        int cur_size = static_cast<int>(feature_idx_map.size());
-                        for(int i = cur_size; i < feature_idx; ++i) {
-                            feature_idx_map.push_back(-1);
-                        }
-                        feature_idx_map.push_back(-1);
-                    }
-                }
-                else if(std::fabs(fvalue) >= 1e-15) {
-                    if(feature_idx_map.size() <= feature_idx) {
-                        int cur_size = static_cast<int>(feature_idx_map.size());
-                        for(int i = cur_size; i < feature_idx; ++i) {
-                            feature_idx_map.push_back(-1);
-                        }
-                        feature_idx_map.push_back(cur_feature);
-                        ++cur_feature;
-                        feature_matrix.emplace_back(0);
-                        sparse_ratio.emplace_back(0.0);
-                    }
-                    else if(feature_idx_map[feature_idx] == -1) {
-                        feature_idx_map[feature_idx] = cur_feature;
-                        ++cur_feature;
-                        feature_matrix.emplace_back(0);
-                        sparse_ratio.emplace_back(0.0);
-                    }
-                    sparse_ratio[feature_idx_map[feature_idx]] += 1.0;
-                    feature_matrix[feature_idx_map[feature_idx]].push_back(fvalue); 
-                }
-                
-                delimiter = fin.get();
-                if(delimiter == '\r' || delimiter == '\n') {
-                    ++data_idx;
-                    feature_idx = 0;
-                }
-                else if(delimiter == ',') {
-                    ++feature_idx;
-                }
-            }
-            
-            fin.close();
-            
-            num_feature = cur_feature;
-            num_data = data_idx;*/
-            CalcBinBoundaries(feature_matrix);
+        CalcBinBoundaries(feature_matrix);
         
         feature_matrix.clear();
-        feature_matrix.shrink_to_fit();
-        
-        /*for(int i = 0; i < sparse_ratio.size(); ++i) {
-            sparse_ratio[i] = /= num_data;
-        }*/
-        
-        cout << "finish constructing bin mappers, " << num_data << " and " << num_feature << endl;
+        feature_matrix.shrink_to_fit(); 
+        cout << "finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl;  
     }
 }
 
