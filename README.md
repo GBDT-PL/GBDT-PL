@@ -66,3 +66,7 @@ To measure the testing time accurately, we expand some testing sets by replicati
 | Cubic | 1,000,000 | 10,000,000 | x10 | 
 
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/testing-time.png)
+
+### GOSS Sampling
+We implement the Gradient Base One Side Sampling (GOSS) of LightGBM. At each iteration, we sample the data points with biggest gradient magnitude within top 20%, and random sample 10% from the rest of training data set. Compared with Figure 1 in this page, GOSS speedups the training process of both GBDT-PL and LightGBM.
+![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/goss.png)
