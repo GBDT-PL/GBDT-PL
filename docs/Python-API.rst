@@ -1,12 +1,21 @@
+##################
+GBDT-PL Python API
+##################
 *******************************
 Steps to Use GBDT-PL Python API
 *******************************
 To use the python API of GBDT-PL, we need 5 steps:
+
 1. Create a dictionary of parameters for GBDT-PL. 
+
 2. Create training, evaluation and test datasets. All datasets in GBDT-PL are represented by class DataMat. The parameter dictionary is passed to all the DataMat instances.
+
 3. Create a booster.
+
 4. Train the booster.
+
 5. Predict. 
+
 The following sections will introduce each of the above steps. 
 
 *************************
@@ -105,8 +114,42 @@ Tree Parameters
 ***************
 Create Datasets
 ***************
-Each dataset in GBDT-PL is represented by a DataMat instance. To create a DataMat, we use the following function.
+Each dataset in GBDT-PL is represented by a DataMat instance. Currently we only support input with csv file. To create a DataMat, we use the following function.
+.. code:: python
 
-.. code:: sh
+    gbdtpl.DataMat(name, params, label_index, group_id_index, path_to_csv_file, train_dataset=None)
+* ``name``: The name of the dataset.
+* ``params``: The parameter dictionary of GBDT-PL.
+* ``label_index``: The column number of the label in the csv file.
+* ``group_id_index``: The column number of the group id in the csv file. Used in ranking tasks only, for other tasks, just set it as -1.
+* ``path_to_csv_file``: The full path to the csv file used to create this dataset. 
+* ``train_dataset``: If this dataset is a test or evaluation dataset, then set train_dataset to the corresponding DataMat of training dataset. 
 
-    
+**************
+Create Booster
+**************
+To create a booster, call the following function.
+.. code:: python
+
+    gbdtpl.Booster(params, train_data, eval_data)
+* ``params``: The parameter dictionary of GBDT-PL.
+* ``train_data``: The DataMat of training dataset.
+* ``eval_data``: The DataMat of evaluation dataset.
+
+*****************
+Train the Booster
+*****************
+To train the booster, just call 
+.. code:: python
+
+    booster.Train()
+where ``booster`` is the booster instance created before.
+
+*******
+Predict
+*******
+To predict for DataMata ``test_data``, use
+.. code:: python
+
+    result = booster.Predict(test_data)
+where the result will be returned as a numpy array.
