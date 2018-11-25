@@ -1,2 +1,3 @@
-.. code: sh
-  git clone
+.. code:: sh
+
+    pip install lightgbm
