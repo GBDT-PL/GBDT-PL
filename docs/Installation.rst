@@ -1,1 +1,2 @@
-d
+.. code: sh
+  git clone
