@@ -1,1 +1,4 @@
-#GBDT-PL Parameters
+# GBDT-PL Parameters
+* ``num_trees``
+
+  - Number of boosting iterations.
