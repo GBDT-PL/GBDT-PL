@@ -1,6 +1,19 @@
-# GBDT-PL Python Parameters
+*******************************
+Steps to Use GBDT-PL Python API
+*******************************
+To use the python API of GBDT-PL, we need 5 steps:
+1. Create a dictionary of parameters for GBDT-PL. 
+2. Create training, evaluation and test datasets. All datasets in GBDT-PL are represented by class DataMat. The parameter dictionary is passed to all the DataMat instances.
+3. Create a booster.
+4. Train the booster.
+5. Predict. 
+The following sections will introduce each of the above steps. 
 
-## Booster Parameters
+*************************
+GBDT-PL Python Parameters
+*************************
+Booster Parameters
+==================
 * ``num_trees``
 
   - Number of boosting iterations.
@@ -44,6 +57,26 @@
 * ``num_threads``
   - The number of threads used in the parallelism.
   
+* ``verbose``
+  - Controls the evaluation. 
+  - Choices: ``0``, ``1``, ``2``
+  - ``0``: No dataset is evaluated.
+  - ``1``: Only the evaluation set is evaluated in each boosting step.
+  - ``2``: Both the training and evaluation sets are evaluated in each boosting step.
+  
+* ``boosting_type``
+  - Controls the sampling in boosting.
+  - Choices: ``gbdt``, ``goss``
+  - ``gbdt``: No sampling.
+  - ``goss``: Use goss sampling as LightGBM.
+  
+* ``goss_alpha``
+  - The sample ratio by magnitudes of hessians. Used when ``boosting_type=goss``
+  
+* ``goss_beta``
+  - The random sample ratio. Used when ``boosting_type=goss``
+Tree Parameters
+===============
 * ``num_bins``
   - The maximum number of bins used in the histograms. Currently, we only support at most 255 bins.
   
@@ -68,22 +101,12 @@
   
 * ``max_depth``
   - The maximum number of levels in each tree, used when ``grow_by=level``
-  
-* ``verbose``
-  - Controls the evaluation. 
-  - Choices: ``0``, ``1``, ``2``
-  - ``0``: No dataset is evaluated.
-  - ``1``: Only the evaluation set is evaluated in each boosting step.
-  - ``2``: Both the training and evaluation sets are evaluated in each boosting step.
-  
-* ``boosting_type``
-  - Controls the sampling in boosting.
-  - Choices: ``gbdt``, ``goss``
-  - ``gbdt``: No sampling.
-  - ``goss``: Use goss sampling as LightGBM.
-  
-* ``goss_alpha``
-  - The sample ratio by magnitudes of hessians. Used when ``boosting_type=goss``
-  
-* ``goss_beta``
-  - The random sample ratio. Used when ``boosting_type=goss``
+
+***************
+Create Datasets
+***************
+Each dataset in GBDT-PL is represented by a DataMat instance. To create a DataMat, we use the following function.
+
+.. code:: sh
+
+    
