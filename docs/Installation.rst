@@ -2,7 +2,9 @@ Install the python package by the following steps. (If you use python3, replace 
 .. code:: sh
     
     git clone https://github.com/GBDT-PL/GBDT-PL.git
+    
     cd GBDT-PL/python
+    
     pip install --user .
 
 After your installation, you should successfully run
