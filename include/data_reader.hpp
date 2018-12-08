@@ -28,10 +28,11 @@ private:
     int buffer_size;
     int num_features;
     int num_data;
+    int label_idx;
     
 public:
     DataReader(string file_path_, int buffer_size_,
-               vector<vector<double>> &feature_values_, vector<double> &label_); 
+               vector<vector<double>> &feature_values_, vector<double> &label_, int label_idx_); 
     
     void Read(int num_threads);
     void ReadByRow(int num_threads);

@@ -28,7 +28,7 @@ booster_config(_booster_config), name(_name) {
     
     if(reference != nullptr) {
         csv_fname = fname;
-        DataReader reader(fname, 50000, unbined_data, label);
+        DataReader reader(fname, 50000, unbined_data, label, label_idx);
         reader.ReadByRow(booster_config.num_threads);
         num_feature = reader.get_num_features();
         num_data = reader.get_num_data();
@@ -37,7 +37,7 @@ booster_config(_booster_config), name(_name) {
     else {
         vector<vector<double>> feature_matrix;
         csv_fname = fname;
-        DataReader reader(fname, 50000, feature_matrix, label);
+        DataReader reader(fname, 50000, feature_matrix, label, label_idx);
         reader.Read(booster_config.num_threads); 
         num_feature = reader.get_num_features();
         num_data = reader.get_num_data();

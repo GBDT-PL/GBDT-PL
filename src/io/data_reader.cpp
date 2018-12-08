@@ -15,15 +15,19 @@ using std::cout;
 using std::endl;
 
 DataReader::DataReader(string file_path_, int buffer_size_,
-                       vector<vector<double>>& feature_values_, vector<double> &label_):
+                       vector<vector<double>>& feature_values_, vector<double> &label_, int label_idx_):
 feature_values(feature_values_), label(label_) {
     num_features = 0;
     num_data = 0;
     file_path = file_path_;
     buffer_size = buffer_size_;
+    label_idx = label_idx_;
 }
 
 void DataReader::Read(int num_threads) {
+    if(num_threads == 1) {
+    	num_threads = 2;
+    }
     ifstream fin_line_count(file_path);
     string line_count;
     num_data = 1;
@@ -80,24 +84,30 @@ void DataReader::Read(int num_threads) {
                     for(int j = 0; j < buffer[i].size(); ++j) {
                         if(buffer[i][j] == ',') {
                             value = std::atof(c_str + begin);
-                            //assert label fid == 0
-                            if(fid > 0) {
-                                feature_values[fid - 1][cur_total_lines + i] = value;
+
+                            if(fid >= 0 && fid < label_idx) {
+                                feature_values[fid][cur_total_lines + i] = value;
                             }
-                            else {	
+                            else if(fid == label_idx) {	
                                 label[cur_total_lines + i] = value;
                             }
+			    else {
+			    	feature_values[fid - 1][cur_total_lines + i] = value;
+			    }
                             begin = j + 1;
                             ++fid;
                         }
                     }
                     value = std::atof(c_str + begin);
-                    if(fid > 0) {
-                        feature_values[fid - 1][cur_total_lines + i] = value;
+                    if(fid >= 0 && fid < label_idx) {
+                        feature_values[fid][cur_total_lines + i] = value;
                     }
-                    else {
+                    else if(fid == label_idx) {
                         label[cur_total_lines + i] = value;
                     }
+		    else {
+		        feature_values[fid - 1][cur_total_lines + i] = value;
+		    }
                 }
             }
         }
@@ -108,6 +118,9 @@ void DataReader::Read(int num_threads) {
 }
 
 void DataReader::ReadByRow(int num_threads) {
+    if(num_threads == 1) {
+    	num_threads = 2;
+    }
     ifstream fin_line_count(file_path);
     string line_count;
     num_data = 1;
@@ -164,24 +177,30 @@ void DataReader::ReadByRow(int num_threads) {
                     for(int j = 0; j < buffer[i].size(); ++j) {
                         if(buffer[i][j] == ',') {
                             value = std::atof(c_str + begin);
-                            //assert label fid == 0
-                            if(fid > 0) {
-                                feature_values[cur_total_lines + i][fid - 1] = value;
+
+                            if(fid >= 0 && fid < label_idx) {
+                                feature_values[cur_total_lines + i][fid] = value;
                             }
-                            else {
+                            else if(fid == label_idx) {
                                 label[cur_total_lines + i] = value;
                             }
+			    else {
+			        feature_values[cur_total_lines + i][fid - 1] = value;
+			    }
                             begin = j + 1;
                             ++fid;
                         }
                     }
                     value = std::atof(c_str + begin);
-                    if(fid > 0) {
-                        feature_values[cur_total_lines + i][fid - 1] = value;
+                    if(fid >= 0 && fid < label_idx) {
+                        feature_values[cur_total_lines + i][fid] = value;
                     }
-                    else {
+                    else if(fid == label_idx) {
                         label[cur_total_lines + i] = value;
                     }
+		    else {
+		        feature_values[cur_total_lines + i][fid - 1] = value;
+		    }
                 }
             }
         }
