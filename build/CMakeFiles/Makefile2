@@ -54,10 +54,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/shiyu/git/GBDT-PL
+CMAKE_SOURCE_DIR = /data2/shiyu/git/GBDT-PL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/shiyu/git/GBDT-PL/build
+CMAKE_BINARY_DIR = /data2/shiyu/git/GBDT-PL/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/GBDT-PL.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /data1/shiyu/git/GBDT-PL/build
 CMakeFiles/GBDT-PL.dir/all:
 	$(MAKE) -f CMakeFiles/GBDT-PL.dir/build.make CMakeFiles/GBDT-PL.dir/depend
 	$(MAKE) -f CMakeFiles/GBDT-PL.dir/build.make CMakeFiles/GBDT-PL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target GBDT-PL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target GBDT-PL"
 .PHONY : CMakeFiles/GBDT-PL.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/GBDT-PL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GBDT-PL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/shiyu/git/GBDT-PL/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /data2/shiyu/git/GBDT-PL/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GBDT-PL.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/shiyu/git/GBDT-PL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data2/shiyu/git/GBDT-PL/build/CMakeFiles 0
 .PHONY : CMakeFiles/GBDT-PL.dir/rule
 
 # Convenience name for target.
@@ -103,7 +103,7 @@ clean: CMakeFiles/GBDT-PL.dir/clean
 CMakeFiles/lineargbm.dir/all:
 	$(MAKE) -f CMakeFiles/lineargbm.dir/build.make CMakeFiles/lineargbm.dir/depend
 	$(MAKE) -f CMakeFiles/lineargbm.dir/build.make CMakeFiles/lineargbm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target lineargbm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target lineargbm"
 .PHONY : CMakeFiles/lineargbm.dir/all
 
 # Include target in all.
@@ -113,9 +113,9 @@ all: CMakeFiles/lineargbm.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lineargbm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/shiyu/git/GBDT-PL/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /data2/shiyu/git/GBDT-PL/build/CMakeFiles 27
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lineargbm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data1/shiyu/git/GBDT-PL/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /data2/shiyu/git/GBDT-PL/build/CMakeFiles 0
 .PHONY : CMakeFiles/lineargbm.dir/rule
 
 # Convenience name for target.

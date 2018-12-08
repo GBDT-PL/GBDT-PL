@@ -29,6 +29,12 @@ void DataReader::Read(int num_threads) {
     	num_threads = 2;
     }
     ifstream fin_line_count(file_path);
+    
+    if(!fin_line_count) {
+        cout << "[GBDT-PL] Fail to find file: " << file_path << endl;
+	exit(1);
+    }
+
     string line_count;
     num_data = 1;
     num_features = 1;
@@ -39,7 +45,9 @@ void DataReader::Read(int num_threads) {
         }
     }
     //subtract label
-    --num_features;
+    if(label_idx != -1) {
+    	--num_features;
+    }
     while(getline(fin_line_count, line_count)) {
         ++num_data;
     }
@@ -85,7 +93,7 @@ void DataReader::Read(int num_threads) {
                         if(buffer[i][j] == ',') {
                             value = std::atof(c_str + begin);
 
-                            if(fid >= 0 && fid < label_idx) {
+                            if(label_idx == -1 || (fid >= 0 && fid < label_idx)) {
                                 feature_values[fid][cur_total_lines + i] = value;
                             }
                             else if(fid == label_idx) {	
@@ -99,7 +107,7 @@ void DataReader::Read(int num_threads) {
                         }
                     }
                     value = std::atof(c_str + begin);
-                    if(fid >= 0 && fid < label_idx) {
+                    if(label_idx == -1 || (fid >= 0 && fid < label_idx)) {
                         feature_values[fid][cur_total_lines + i] = value;
                     }
                     else if(fid == label_idx) {
@@ -122,6 +130,12 @@ void DataReader::ReadByRow(int num_threads) {
     	num_threads = 2;
     }
     ifstream fin_line_count(file_path);
+    
+    if(!fin_line_count) {
+        cout << "[GBDT-PL] Fail to find file: " << file_path << endl;
+	exit(1);
+    }
+
     string line_count;
     num_data = 1;
     num_features = 1;
@@ -132,7 +146,9 @@ void DataReader::ReadByRow(int num_threads) {
         }
     }
     //subtract label
-    --num_features;
+    if(label_idx != -1) {
+    	--num_features;
+    }
     while(getline(fin_line_count, line_count)) {
         ++num_data;
     }
@@ -178,7 +194,7 @@ void DataReader::ReadByRow(int num_threads) {
                         if(buffer[i][j] == ',') {
                             value = std::atof(c_str + begin);
 
-                            if(fid >= 0 && fid < label_idx) {
+                            if(label_idx == -1 || (fid >= 0 && fid < label_idx)) {
                                 feature_values[cur_total_lines + i][fid] = value;
                             }
                             else if(fid == label_idx) {
@@ -192,7 +208,7 @@ void DataReader::ReadByRow(int num_threads) {
                         }
                     }
                     value = std::atof(c_str + begin);
-                    if(fid >= 0 && fid < label_idx) {
+                    if(label_idx == -1 || (fid >= 0 && fid < label_idx)) {
                         feature_values[cur_total_lines + i][fid] = value;
                     }
                     else if(fid == label_idx) {

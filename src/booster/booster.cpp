@@ -48,8 +48,7 @@ data_partition(&_train_data, &_booster_config, gradients) {
         num_data_aligned = (train_data.num_data / 4 + 1) * 4;
     }
     gradients.resize(num_data_aligned * 2 * booster_config.num_classes, 0.0);
-    
-    //tmp_gradients.resize(train_data.num_data, 0.0);
+   
     
     trees.resize(num_trees * num_classes, nullptr); 
     
@@ -293,116 +292,55 @@ void Booster::Train() {
             }
             data_partition.AfterTrainTree(); 
         }
-        cout << "iteration " << i << endl;
+        cout << "[GBDT-PL] iteration " << i << endl;
         if(booster_config.verbose > 0) {
             if(booster_config.verbose == 2) {
-                cout << train_data.name << " " << train_eval->name << ": " << train_eval->Eval() << endl;
+                cout << "[GBDT-PL] " << train_data.name << " " << train_eval->name << ": " << train_eval->Eval() << endl;
             }
-            cout << test_data.name << " " << test_eval->name << ": " << test_eval->Eval() << endl;
+            cout << "[GBDT-PL] " << test_data.name << " " << test_eval->name << ": " << test_eval->Eval() << endl;
         }
-        booster_config.PrintIterationTime();
+        //booster_config.PrintIterationTime();
         booster_config.ClearIterationTime(); 
-        std::cout << "time: " << (omp_get_wtime() - start_t) << std::endl;
+        std::cout << "[GBDT-PL] time: " << (omp_get_wtime() - start_t) << std::endl;
+	cout << endl;
     }
-    std::cout << "all time: " << (omp_get_wtime() - all_start_t) << std::endl;
-    data_partition.PrintAllTime();  
-    cout << "evaluate time: " << evaluate_time << endl;
+    std::cout << "[GBDT_PL] all time: " << (omp_get_wtime() - all_start_t) << std::endl;
+    //data_partition.PrintAllTime();  
+    //cout << "evaluate time: " << evaluate_time << endl;
 }
 
-void Booster::Predict(DataMat &predict_data, vector<double> &results) {
-    int num_data = predict_data.num_data;
-    results.resize(booster_config.num_classes * num_data, 0.0);
-    
+void Booster::Predict(DataMat &predict_data, vector<double> &results, int iters) {
 
-
-
-    Metric *eval = nullptr;
-    
-    if(booster_config.eval_metric == "auc") {
-        eval = new AUC(booster_config, predict_data.label, results);
-    }
-    else if(booster_config.eval_metric == "rmse") {
-        eval = new RMSE(booster_config, predict_data.label, results);
-    }
-    else if(booster_config.eval_metric == "ndcg") {
-        eval = new NDCG(booster_config, predict_data.label, results, predict_data.queries); 
-    }
+    double start_t = omp_get_wtime();
+ 
+    int num_data = predict_data.num_data;  
+  
     auto data = predict_data.unbined_data;
-    //double start_t = omp_get_wtime();
-
-    cout << "48 threads" << endl;
-    for(int iter = booster_config.num_trees; iter <= booster_config.num_trees; iter += 10) {
-double start_t = omp_get_wtime();
-
-results.clear();
-	    results.resize(booster_config.num_classes * num_data, 0.0);
-if(booster_config.loss == "l2") {
-#pragma omp parallel for schedule(static) num_threads(24) 
-for(int i = 0; i < num_data; ++i) {
-	results[i] = avg_label;
-}	
+    
+    if(iters < 0) {
+    	iters = booster_config.num_trees;
     }
 
-
-//double start_t = omp_get_wtime();
+    results.clear();
+    results.resize(booster_config.num_classes * num_data, 0.0);
+    if(booster_config.loss == "l2") {
+#pragma omp parallel for schedule(static) num_threads(24) 
+	for(int i = 0; i < num_data; ++i) {
+	    results[i] = avg_label;
+	}	
+    }
 
 #pragma omp parallel for schedule(static) num_threads(48)
     for(int k = 0; k < predict_data.num_data; ++k) {
-    for(int i = 0; i < iter; ++i) { 
-        for(int j = 0; j < booster_config.num_classes; ++j) {
-            int offset = j * num_data;
-            //trees[i * booster_config.num_classes + j]->Predict(&predict_data,
-            //                                                   results.data() + offset);  
-	    results[k + offset] += trees[i * booster_config.num_classes + j]->PredictSingle(data[k]);
-        }
-        //double end_t = omp_get_wtime();
-        //cout << "predict iteration " << i << endl;
-        //cout << predict_data.name << " " << eval->name << ": " << eval->Eval() << endl;
-        //cout << "time: " << (end_t - start_t) << endl;
-    } 
+    	for(int i = 0; i < iters; ++i) { 
+            for(int j = 0; j < booster_config.num_classes; ++j) {
+                int offset = j * num_data;
+	        results[k + offset] += trees[i * booster_config.num_classes + j]->PredictSingle(data[k]);
+            }
+    	} 
     }
     double end_t = omp_get_wtime();
-    cout << iter << " predict time: " << (end_t - start_t) << endl;
-    cout << predict_data.name << " " << eval->name << ": " << eval->Eval() << endl;
-    }
-//double start_t = omp_get_wtime();
-
-    /*cout << "24 threads" << endl;
-for(int iter = 10; iter <= booster_config.num_trees; iter += 10) {
-double start_t = omp_get_wtime();
-
-results.clear();
-	    results.resize(booster_config.num_classes * num_data, 0.0);
-if(booster_config.loss == "l2") {
-#pragma omp parallel for schedule(static) num_threads(24) 
-for(int i = 0; i < num_data; ++i) {
-	results[i] = avg_label;
-}	
-    }
-
-
-    //double start_t = omp_get_wtime();
-
-#pragma omp parallel for schedule(static) num_threads(24)
-    for(int k = 0; k < predict_data.num_data; ++k) {
-    for(int i = 0; i < iter; ++i) { 
-        for(int j = 0; j < booster_config.num_classes; ++j) {
-            int offset = j * num_data;
-            //trees[i * booster_config.num_classes + j]->Predict(&predict_data,
-            //                                                   results.data() + offset);  
-	    results[k + offset] += trees[i * booster_config.num_classes + j]->PredictSingle(data[k]);
-        }
-        //double end_t = omp_get_wtime();
-        //cout << "predict iteration " << i << endl;
-        //cout << predict_data.name << " " << eval->name << ": " << eval->Eval() << endl;
-        //cout << "time: " << (end_t - start_t) << endl;
-    } 
-    }
-    double end_t = omp_get_wtime();
-    cout << iter << " predict time: " << (end_t - start_t) << endl;
-    cout << predict_data.name << " " << eval->name << ": " << eval->Eval() << endl;
-    }*/
-
+    cout << "[GBDT-PL] predict time: " << (end_t - start_t) << endl;
 }
 
 void Booster::BoostFromAverage() {

@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data1/shiyu/git/GBDT-PL
+CMAKE_SOURCE_DIR = /data2/shiyu/git/GBDT-PL
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data1/shiyu/git/GBDT-PL/build
+CMAKE_BINARY_DIR = /data2/shiyu/git/GBDT-PL/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/lineargbm.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/lineargbm.dir/flags.make
 
 CMakeFiles/lineargbm.dir/src/main.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lineargbm.dir/src/main.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/main.cpp.o -c /data1/shiyu/git/GBDT-PL/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lineargbm.dir/src/main.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/main.cpp.o -c /data2/shiyu/git/GBDT-PL/src/main.cpp
 
 CMakeFiles/lineargbm.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/main.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/main.cpp > CMakeFiles/lineargbm.dir/src/main.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/main.cpp > CMakeFiles/lineargbm.dir/src/main.cpp.i
 
 CMakeFiles/lineargbm.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/main.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/main.cpp -o CMakeFiles/lineargbm.dir/src/main.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/main.cpp -o CMakeFiles/lineargbm.dir/src/main.cpp.s
 
 CMakeFiles/lineargbm.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/lineargbm.dir/src/main.cpp.o.provides.build: CMakeFiles/lineargbm.dir
 
 CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o: ../src/io/data_reader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o -c /data1/shiyu/git/GBDT-PL/src/io/data_reader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o -c /data2/shiyu/git/GBDT-PL/src/io/data_reader.cpp
 
 CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/io/data_reader.cpp > CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/io/data_reader.cpp > CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.i
 
 CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/io/data_reader.cpp -o CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/io/data_reader.cpp -o CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.s
 
 CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/lineargbm.dir/src/io/data_reader.cpp.o.provides.build: CMakeFiles/lin
 
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o: ../src/interface/interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o -c /data1/shiyu/git/GBDT-PL/src/interface/interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o -c /data2/shiyu/git/GBDT-PL/src/interface/interface.cpp
 
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/interface/interface.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/interface/interface.cpp > CMakeFiles/lineargbm.dir/src/interface/interface.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/interface/interface.cpp > CMakeFiles/lineargbm.dir/src/interface/interface.cpp.i
 
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/interface/interface.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/interface/interface.cpp -o CMakeFiles/lineargbm.dir/src/interface/interface.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/interface/interface.cpp -o CMakeFiles/lineargbm.dir/src/interface/interface.cpp.s
 
 CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/lineargbm.dir/src/interface/interface.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o: ../src/booster/threshold_finder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o -c /data1/shiyu/git/GBDT-PL/src/booster/threshold_finder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o -c /data2/shiyu/git/GBDT-PL/src/booster/threshold_finder.cpp
 
 CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/booster/threshold_finder.cpp > CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/booster/threshold_finder.cpp > CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.i
 
 CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/booster/threshold_finder.cpp -o CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/booster/threshold_finder.cpp -o CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.s
 
 CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/lineargbm.dir/src/booster/threshold_finder.cpp.o.provides.build: CMak
 
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o: ../src/booster/booster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o -c /data1/shiyu/git/GBDT-PL/src/booster/booster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o -c /data2/shiyu/git/GBDT-PL/src/booster/booster.cpp
 
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/booster/booster.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/booster/booster.cpp > CMakeFiles/lineargbm.dir/src/booster/booster.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/booster/booster.cpp > CMakeFiles/lineargbm.dir/src/booster/booster.cpp.i
 
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/booster/booster.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/booster/booster.cpp -o CMakeFiles/lineargbm.dir/src/booster/booster.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/booster/booster.cpp -o CMakeFiles/lineargbm.dir/src/booster/booster.cpp.s
 
 CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/lineargbm.dir/src/booster/booster.cpp.o.provides.build: CMakeFiles/li
 
 CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o: ../src/metric/metric.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o -c /data1/shiyu/git/GBDT-PL/src/metric/metric.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o -c /data2/shiyu/git/GBDT-PL/src/metric/metric.cpp
 
 CMakeFiles/lineargbm.dir/src/metric/metric.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/metric/metric.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/metric/metric.cpp > CMakeFiles/lineargbm.dir/src/metric/metric.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/metric/metric.cpp > CMakeFiles/lineargbm.dir/src/metric/metric.cpp.i
 
 CMakeFiles/lineargbm.dir/src/metric/metric.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/metric/metric.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/metric/metric.cpp -o CMakeFiles/lineargbm.dir/src/metric/metric.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/metric/metric.cpp -o CMakeFiles/lineargbm.dir/src/metric/metric.cpp.s
 
 CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/lineargbm.dir/src/metric/metric.cpp.o.provides.build: CMakeFiles/line
 
 CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o: ../src/metric/ndcg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o -c /data1/shiyu/git/GBDT-PL/src/metric/ndcg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o -c /data2/shiyu/git/GBDT-PL/src/metric/ndcg.cpp
 
 CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/metric/ndcg.cpp > CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/metric/ndcg.cpp > CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.i
 
 CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/metric/ndcg.cpp -o CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/metric/ndcg.cpp -o CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.s
 
 CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/lineargbm.dir/src/metric/ndcg.cpp.o.provides.build: CMakeFiles/linear
 
 CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o: ../src/metric/auc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o -c /data1/shiyu/git/GBDT-PL/src/metric/auc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o -c /data2/shiyu/git/GBDT-PL/src/metric/auc.cpp
 
 CMakeFiles/lineargbm.dir/src/metric/auc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/metric/auc.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/metric/auc.cpp > CMakeFiles/lineargbm.dir/src/metric/auc.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/metric/auc.cpp > CMakeFiles/lineargbm.dir/src/metric/auc.cpp.i
 
 CMakeFiles/lineargbm.dir/src/metric/auc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/metric/auc.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/metric/auc.cpp -o CMakeFiles/lineargbm.dir/src/metric/auc.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/metric/auc.cpp -o CMakeFiles/lineargbm.dir/src/metric/auc.cpp.s
 
 CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/lineargbm.dir/src/metric/auc.cpp.o.provides.build: CMakeFiles/linearg
 
 CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o: ../src/metric/rmse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o -c /data1/shiyu/git/GBDT-PL/src/metric/rmse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o -c /data2/shiyu/git/GBDT-PL/src/metric/rmse.cpp
 
 CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/metric/rmse.cpp > CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/metric/rmse.cpp > CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.i
 
 CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/metric/rmse.cpp -o CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/metric/rmse.cpp -o CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.s
 
 CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/lineargbm.dir/src/metric/rmse.cpp.o.provides.build: CMakeFiles/linear
 
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o: ../src/tree/level_wise_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o -c /data1/shiyu/git/GBDT-PL/src/tree/level_wise_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o -c /data2/shiyu/git/GBDT-PL/src/tree/level_wise_tree.cpp
 
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/tree/level_wise_tree.cpp > CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/tree/level_wise_tree.cpp > CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.i
 
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/tree/level_wise_tree.cpp -o CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/tree/level_wise_tree.cpp -o CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.s
 
 CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/lineargbm.dir/src/tree/level_wise_tree.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o: ../src/tree/tree_predictors.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o -c /data1/shiyu/git/GBDT-PL/src/tree/tree_predictors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o -c /data2/shiyu/git/GBDT-PL/src/tree/tree_predictors.cpp
 
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/tree/tree_predictors.cpp > CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/tree/tree_predictors.cpp > CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.i
 
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/tree/tree_predictors.cpp -o CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/tree/tree_predictors.cpp -o CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.s
 
 CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/lineargbm.dir/src/tree/tree_predictors.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o: ../src/tree/leaf_wise_tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o -c /data1/shiyu/git/GBDT-PL/src/tree/leaf_wise_tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o -c /data2/shiyu/git/GBDT-PL/src/tree/leaf_wise_tree.cpp
 
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/tree/leaf_wise_tree.cpp > CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/tree/leaf_wise_tree.cpp > CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.i
 
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/tree/leaf_wise_tree.cpp -o CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/tree/leaf_wise_tree.cpp -o CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.s
 
 CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/lineargbm.dir/src/tree/leaf_wise_tree.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o: ../src/tree/tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o -c /data1/shiyu/git/GBDT-PL/src/tree/tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o -c /data2/shiyu/git/GBDT-PL/src/tree/tree.cpp
 
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/tree/tree.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/tree/tree.cpp > CMakeFiles/lineargbm.dir/src/tree/tree.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/tree/tree.cpp > CMakeFiles/lineargbm.dir/src/tree/tree.cpp.i
 
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/tree/tree.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/tree/tree.cpp -o CMakeFiles/lineargbm.dir/src/tree/tree.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/tree/tree.cpp -o CMakeFiles/lineargbm.dir/src/tree/tree.cpp.s
 
 CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/lineargbm.dir/src/tree/tree.cpp.o.provides.build: CMakeFiles/lineargb
 
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o: ../src/node/linear_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o -c /data1/shiyu/git/GBDT-PL/src/node/linear_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o -c /data2/shiyu/git/GBDT-PL/src/node/linear_node.cpp
 
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/node/linear_node.cpp > CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/node/linear_node.cpp > CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.i
 
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/node/linear_node.cpp -o CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/node/linear_node.cpp -o CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.s
 
 CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/lineargbm.dir/src/node/linear_node.cpp.o.provides.build: CMakeFiles/l
 
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o: ../src/node/additive_linear_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o -c /data1/shiyu/git/GBDT-PL/src/node/additive_linear_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o -c /data2/shiyu/git/GBDT-PL/src/node/additive_linear_node.cpp
 
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/node/additive_linear_node.cpp > CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/node/additive_linear_node.cpp > CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.i
 
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/node/additive_linear_node.cpp -o CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/node/additive_linear_node.cpp -o CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.s
 
 CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/lineargbm.dir/src/node/additive_linear_node.cpp.o.provides.build: CMa
 
 CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o: ../src/argmax/argmax.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o -c /data1/shiyu/git/GBDT-PL/src/argmax/argmax.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o -c /data2/shiyu/git/GBDT-PL/src/argmax/argmax.cpp
 
 CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/argmax/argmax.cpp > CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/argmax/argmax.cpp > CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.i
 
 CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/argmax/argmax.cpp -o CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/argmax/argmax.cpp -o CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.s
 
 CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/lineargbm.dir/src/argmax/argmax.cpp.o.provides.build: CMakeFiles/line
 
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o: ../src/features/ordered_feature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o -c /data1/shiyu/git/GBDT-PL/src/features/ordered_feature.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o -c /data2/shiyu/git/GBDT-PL/src/features/ordered_feature.cpp
 
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/features/ordered_feature.cpp > CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/features/ordered_feature.cpp > CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.i
 
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/features/ordered_feature.cpp -o CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/features/ordered_feature.cpp -o CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.s
 
 CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/lineargbm.dir/src/features/ordered_feature.cpp.o.provides.build: CMak
 
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o: ../src/features/sparse_linear_bin_feature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o -c /data1/shiyu/git/GBDT-PL/src/features/sparse_linear_bin_feature.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o -c /data2/shiyu/git/GBDT-PL/src/features/sparse_linear_bin_feature.cpp
 
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/features/sparse_linear_bin_feature.cpp > CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/features/sparse_linear_bin_feature.cpp > CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.i
 
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/features/sparse_linear_bin_feature.cpp -o CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/features/sparse_linear_bin_feature.cpp -o CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.s
 
 CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/lineargbm.dir/src/features/sparse_linear_bin_feature.cpp.o.provides.b
 
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o: ../src/features/linear_bin_feature.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o -c /data1/shiyu/git/GBDT-PL/src/features/linear_bin_feature.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o -c /data2/shiyu/git/GBDT-PL/src/features/linear_bin_feature.cpp
 
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/features/linear_bin_feature.cpp > CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/features/linear_bin_feature.cpp > CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.i
 
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/features/linear_bin_feature.cpp -o CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/features/linear_bin_feature.cpp -o CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.s
 
 CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/lineargbm.dir/src/features/linear_bin_feature.cpp.o.provides.build: C
 
 CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o: ../src/objective/objective.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o -c /data1/shiyu/git/GBDT-PL/src/objective/objective.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o -c /data2/shiyu/git/GBDT-PL/src/objective/objective.cpp
 
 CMakeFiles/lineargbm.dir/src/objective/objective.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/objective/objective.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/objective/objective.cpp > CMakeFiles/lineargbm.dir/src/objective/objective.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/objective/objective.cpp > CMakeFiles/lineargbm.dir/src/objective/objective.cpp.i
 
 CMakeFiles/lineargbm.dir/src/objective/objective.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/objective/objective.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/objective/objective.cpp -o CMakeFiles/lineargbm.dir/src/objective/objective.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/objective/objective.cpp -o CMakeFiles/lineargbm.dir/src/objective/objective.cpp.s
 
 CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/lineargbm.dir/src/objective/objective.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o: ../src/objective/multiclass.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o -c /data1/shiyu/git/GBDT-PL/src/objective/multiclass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o -c /data2/shiyu/git/GBDT-PL/src/objective/multiclass.cpp
 
 CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/objective/multiclass.cpp > CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/objective/multiclass.cpp > CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.i
 
 CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/objective/multiclass.cpp -o CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/objective/multiclass.cpp -o CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.s
 
 CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/lineargbm.dir/src/objective/multiclass.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o: ../src/objective/binary.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o -c /data1/shiyu/git/GBDT-PL/src/objective/binary.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o -c /data2/shiyu/git/GBDT-PL/src/objective/binary.cpp
 
 CMakeFiles/lineargbm.dir/src/objective/binary.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/objective/binary.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/objective/binary.cpp > CMakeFiles/lineargbm.dir/src/objective/binary.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/objective/binary.cpp > CMakeFiles/lineargbm.dir/src/objective/binary.cpp.i
 
 CMakeFiles/lineargbm.dir/src/objective/binary.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/objective/binary.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/objective/binary.cpp -o CMakeFiles/lineargbm.dir/src/objective/binary.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/objective/binary.cpp -o CMakeFiles/lineargbm.dir/src/objective/binary.cpp.s
 
 CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/lineargbm.dir/src/objective/binary.cpp.o.provides.build: CMakeFiles/l
 
 CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o: ../src/objective/regression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o -c /data1/shiyu/git/GBDT-PL/src/objective/regression.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o -c /data2/shiyu/git/GBDT-PL/src/objective/regression.cpp
 
 CMakeFiles/lineargbm.dir/src/objective/regression.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/objective/regression.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/objective/regression.cpp > CMakeFiles/lineargbm.dir/src/objective/regression.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/objective/regression.cpp > CMakeFiles/lineargbm.dir/src/objective/regression.cpp.i
 
 CMakeFiles/lineargbm.dir/src/objective/regression.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/objective/regression.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/objective/regression.cpp -o CMakeFiles/lineargbm.dir/src/objective/regression.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/objective/regression.cpp -o CMakeFiles/lineargbm.dir/src/objective/regression.cpp.s
 
 CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/lineargbm.dir/src/objective/regression.cpp.o.provides.build: CMakeFil
 
 CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o: ../src/histogram/row_histogram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o -c /data1/shiyu/git/GBDT-PL/src/histogram/row_histogram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o -c /data2/shiyu/git/GBDT-PL/src/histogram/row_histogram.cpp
 
 CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/histogram/row_histogram.cpp > CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/histogram/row_histogram.cpp > CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.i
 
 CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/histogram/row_histogram.cpp -o CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/histogram/row_histogram.cpp -o CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.s
 
 CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/lineargbm.dir/src/histogram/row_histogram.cpp.o.provides.build: CMake
 
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o: ../src/datamat/datamat.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o -c /data1/shiyu/git/GBDT-PL/src/datamat/datamat.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o -c /data2/shiyu/git/GBDT-PL/src/datamat/datamat.cpp
 
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/datamat/datamat.cpp > CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/datamat/datamat.cpp > CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.i
 
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/datamat/datamat.cpp -o CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/datamat/datamat.cpp -o CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.s
 
 CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o.provides.build: CMakeFiles/li
 
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: CMakeFiles/lineargbm.dir/flags.make
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o: ../src/datamat/data_partition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o"
-	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o -c /data1/shiyu/git/GBDT-PL/src/datamat/data_partition.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o -c /data2/shiyu/git/GBDT-PL/src/datamat/data_partition.cpp
 
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.i"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data1/shiyu/git/GBDT-PL/src/datamat/data_partition.cpp > CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.i
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /data2/shiyu/git/GBDT-PL/src/datamat/data_partition.cpp > CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.i
 
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.s"
-	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data1/shiyu/git/GBDT-PL/src/datamat/data_partition.cpp -o CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.s
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /data2/shiyu/git/GBDT-PL/src/datamat/data_partition.cpp -o CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.s
 
 CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o.requires:
 
@@ -740,11 +740,11 @@ lineargbm_EXTERNAL_OBJECTS =
 ../lib/liblineargbm.so: CMakeFiles/lineargbm.dir/src/datamat/datamat.cpp.o
 ../lib/liblineargbm.so: CMakeFiles/lineargbm.dir/src/datamat/data_partition.cpp.o
 ../lib/liblineargbm.so: CMakeFiles/lineargbm.dir/build.make
-../lib/liblineargbm.so: /data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_intel_lp64.a
-../lib/liblineargbm.so: /data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_intel_thread.a
-../lib/liblineargbm.so: /data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_core.a
+../lib/liblineargbm.so: /data2/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_intel_lp64.a
+../lib/liblineargbm.so: /data2/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_intel_thread.a
+../lib/liblineargbm.so: /data2/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64/libmkl_core.a
 ../lib/liblineargbm.so: CMakeFiles/lineargbm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data1/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX shared library ../lib/liblineargbm.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data2/shiyu/git/GBDT-PL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX shared library ../lib/liblineargbm.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lineargbm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -786,6 +786,6 @@ CMakeFiles/lineargbm.dir/clean:
 .PHONY : CMakeFiles/lineargbm.dir/clean
 
 CMakeFiles/lineargbm.dir/depend:
-	cd /data1/shiyu/git/GBDT-PL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data1/shiyu/git/GBDT-PL /data1/shiyu/git/GBDT-PL /data1/shiyu/git/GBDT-PL/build /data1/shiyu/git/GBDT-PL/build /data1/shiyu/git/GBDT-PL/build/CMakeFiles/lineargbm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data2/shiyu/git/GBDT-PL/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data2/shiyu/git/GBDT-PL /data2/shiyu/git/GBDT-PL /data2/shiyu/git/GBDT-PL/build /data2/shiyu/git/GBDT-PL/build /data2/shiyu/git/GBDT-PL/build/CMakeFiles/lineargbm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lineargbm.dir/depend
 

@@ -32,7 +32,7 @@ booster_config(_booster_config), name(_name) {
         reader.ReadByRow(booster_config.num_threads);
         num_feature = reader.get_num_features();
         num_data = reader.get_num_data();
-	cout << "finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl; 
+	cout << "[GBDT-PL] finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl; 
     }
     else {
         vector<vector<double>> feature_matrix;
@@ -52,7 +52,7 @@ booster_config(_booster_config), name(_name) {
         
         feature_matrix.clear();
         feature_matrix.shrink_to_fit(); 
-        cout << "finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl;  
+        cout << "[GBDT-PL] finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl;  
     }
 }
 

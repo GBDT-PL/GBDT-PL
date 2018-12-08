@@ -138,7 +138,7 @@ void DataPartition::BeforeTrain() {
                 max_count_bin = j;
             }
         }
-        cout << "feature " << i << " max_bin_count " << max_bin_count << " max_count_bin " << max_count_bin << endl;
+        cout << "[GBDT-PL] feature " << i << " max_bin_count " << max_bin_count << " max_count_bin " << max_count_bin << endl;
     }
     
 #pragma omp parallel for schedule(guided) num_threads(booster_config->num_threads)
@@ -148,8 +148,8 @@ void DataPartition::BeforeTrain() {
         }
     }
     
-    std::cout << "useful features " << useful_features.size() << std::endl;
-    std::cout << "small features " << small_features << std::endl;
+    std::cout << "[GBDT-PL] useful features " << useful_features.size() << std::endl;
+    std::cout << "[GBDT-PL] small features " << small_features << std::endl << std::endl;
 }
 
 void DataPartition::LeafSumUp() {

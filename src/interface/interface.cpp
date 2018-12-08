@@ -109,7 +109,7 @@ int CreateLinearGBMDataMat(LinearGBMBoosterConfig booster_config, const char* na
 }
 
 int Train(LinearGBM gbm) {
-	cout << "start training" << endl;
+	cout << "[GBDT-PL] start training" << endl;
     ((Booster*)gbm)->Train();
     return 0;
 }
@@ -118,10 +118,10 @@ int LinearGBMPrintBoosterConfig(LinearGBMBoosterConfig booster_config) {
     ((BoosterConfig*)booster_config)->PrintAllParams();
 }
 
-int LinearGBMPredict(LinearGBM booster, LinearGBMDataMat test_data, double** preds, int *num_data) {  
+int LinearGBMPredict(LinearGBM booster, LinearGBMDataMat test_data, double** preds, int *num_data, int iters) {  
     DataMat &test_dataa = *(DataMat*)(test_data);
     test_dataa.predict_values.resize(test_dataa.num_data, 0.0);
-    ((Booster*)booster)->Predict(test_dataa, test_dataa.predict_values);
+    ((Booster*)booster)->Predict(test_dataa, test_dataa.predict_values, iters);
     *preds = test_dataa.predict_values.data(); 
     *num_data = test_dataa.num_data;
 }

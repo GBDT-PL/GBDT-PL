@@ -56,7 +56,7 @@ endif()
 
 
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "c")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7;/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin;/data1/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin;/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-redhat-linux/4.8.5;/usr/lib64;/lib64;/data2/shiyu/intel/compilers_and_libraries_2018.0.128/linux/tbb/lib/intel64_lin/gcc4.7;/data2/shiyu/intel/compilers_and_libraries_2018.0.128/linux/compiler/lib/intel64_lin;/data2/shiyu/intel/compilers_and_libraries_2018.0.128/linux/mkl/lib/intel64_lin;/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 

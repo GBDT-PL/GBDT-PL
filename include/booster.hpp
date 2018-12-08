@@ -95,7 +95,7 @@ public:
     
     void Train();
     
-    void Predict(DataMat &predict_data, vector<double> &results); 
+    void Predict(DataMat &predict_data, vector<double> &results, int iters); 
 };
 
 

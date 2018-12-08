@@ -22,9 +22,9 @@ class Booster:
         memmove(numpy_preds.ctypes.data, preds, num_data * numpy_preds.strides[0])
         return numpy_preds
 
-    def Predict(self, test_data):
+    def Predict(self, test_data, iters=-1):
         preds = POINTER(c_double)()
         num_data = c_int()
-        self.LinearGBMLib.LinearGBMPredict(self.booster, test_data.data_mat, byref(preds), byref(num_data))
+        self.LinearGBMLib.LinearGBMPredict(self.booster, test_data.data_mat, byref(preds), byref(num_data), c_int(iters))
         return self.__c_pointer_to_numpy_array(preds, num_data.value)
 

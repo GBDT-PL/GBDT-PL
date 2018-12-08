@@ -10,5 +10,6 @@ if __name__ == "__main__":
     test_data = gbdtpl.DataMat("test", params, 0, -1, "../../../LinearGBM2/data/small_higgs_test.csv", train_data)
     booster = gbdtpl.Booster(params, train_data, test_data) 
     booster.Train()
-    results = booster.Predict(test_data)
-    print results
+    predict_data = gbdtpl.DataMat("predict", params, -1, -1, "../../../LinearGBM2/data/small_higgs_predict.csv", train_data)
+    results = booster.Predict(predict_data)
+    print(results)

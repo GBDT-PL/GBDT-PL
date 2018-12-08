@@ -71,7 +71,7 @@ int main(int argc, const char * argv[]) {
                      &data_mat);
     
     vector<double> result;
-    booster.Predict(predict_data, result);
+    booster.Predict(predict_data, result, -1);
 
     ofstream fout(std::string(argv[12]) + "/" + std::string(argv[12]) + "_" + std::string(argv[3]) + "_" + std::string(argv[7]) + ".result_2");
     for(int i = 0; i < result.size(); ++i) {
