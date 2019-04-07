@@ -24,8 +24,6 @@ We evaluate our algorithm on 10 public datasets.
 | Energy | 29,999 | 15,788 | 27 | Regression | [energy](https://archive.ics.uci.edu/ml/datasets/Energy+efficiency) |
 | Year | 412,206 | 103,139 | 90 | Regression | [year](https://archive.ics.uci.edu/ml/datasets/YearPredictionMSD) |
 
-For Higgs, we use the first 10,000,000 data points as training set, and the reset as testing set. For Epsilon, we use the first 400,000 as training and the reset as testing. For HEPMASS, we use the first 7,000,000 as training and the reset as testing. For CASP, we use the first 29,999 as training and the reset as testing. 
-
 ### Accuracy 
 We compare the accuracy in the following table. Different settings of hyperparameters are tried and the best result is picked for each algorithm. Details of settings can be found in **Parameter Setting** Section of [Experiment Setting](https://github.com/GBDT-PL/GBDT-PL/blob/master/docs/experiment-setting.pdf).
 
