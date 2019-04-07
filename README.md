@@ -15,17 +15,15 @@ We evaluate our algorithm on 4 public datasets. In addition, we create 2 synthet
 |    Higgs   | 10,000,000 | 500,000  |     28    | Classification | [higgs](https://archive.ics.uci.edu/ml/datasets/HIGGS) |
 |   Epsilon  | 400,000 | 100,000  |     2000    | Classification | [epsilon](https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary.html) |
 |  HEPMASS   | 7,000,000 | 3,500,000 | 28 | Classification | [hepmass](https://archive.ics.uci.edu/ml/datasets/HEPMASS)|
+|  SUSY   | 4,000,000 | 1,000,000 | 18 | Classification | [susy](https://archive.ics.uci.edu/ml/datasets/SUSY)|
 | CASP | 29,999 | 15,731 | 9 | Regression | [casp](https://archive.ics.uci.edu/ml/datasets/Physicochemical+Properties+of+Protein+Tertiary+Structure) |
-| Poly | 2,000,000 | 1,000,000 | 200 | Regression | [poly](https://www.dropbox.com/sh/zfxdw6gpzm69ami/AACSWPbATTrGDJaSB7YotIjga?dl=0) |
-| Cubic | 10,000,000 | 1,000,000 | 10 | Regression | [cubic](https://www.dropbox.com/sh/zfxdw6gpzm69ami/AACSWPbATTrGDJaSB7YotIjga?dl=0) |
+| SGEMM | 193,280 | 48,320 | 14 | Regression | [sgemm](https://archive.ics.uci.edu/ml/datasets/SGEMM+GPU+kernel+performance) |
+| SUPERCONDUCTOR | 17,008 | 4,255 | 81 | Regression | [superconductor](https://archive.ics.uci.edu/ml/datasets/Superconductivty+Data) |
+| CT | 29,999 | 15,731 | 384 | Regression | [ct](https://archive.ics.uci.edu/ml/datasets/Relative+location+of+CT+slices+on+axial+axis) |
+| Energy | 29,999 | 15,788 | 27 | Regression | [energy](https://archive.ics.uci.edu/ml/datasets/Energy+efficiency) |
+| Year | 412,206 | 103,139 | 90 | Regression | [year](https://archive.ics.uci.edu/ml/datasets/YearPredictionMSD) |
 
 For Higgs, we use the first 10,000,000 data points as training set, and the reset as testing set. For Epsilon, we use the first 400,000 as training and the reset as testing. For HEPMASS, we use the first 7,000,000 as training and the reset as testing. For CASP, we use the first 29,999 as training and the reset as testing. 
-
-We use a linux server with 2 Xeon E5-2690 v3 CPUs for all our experiments.
-
-|OS | CPU | Memory |
-|---|-----|--------|
-|CentOS Linux 7 | 2 x Xeon E5-2690 v3 | DDR4 2400Mhz, 128GB|
 
 By default, we use the histogram version of XGBoost and LightGBM. Each tree in our experiments has at most **255 leaves**. The **learning rate is 0.1**. We test both **63 bins and 255 bins** for the histograms. **lambda** is the coefficient for regularization terms, we set it as 0.01. **min sum of hessians** is the minimum sum of hessians allowed in each leaf. We set it as 100 to prevent the trees from growing too deep. For GBDT-PL, we use at most **5 regressors** per leaf. 
 
