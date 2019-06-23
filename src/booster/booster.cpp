@@ -144,6 +144,12 @@ void Booster::SetupEvals() {
 	    }
             test_eval = new NDCG(booster_config, test_data.label, test_predict_values, test_data.queries);
         }
+        else if(booster_config.eval_metric == "acc") {
+	    if(booster_config.verbose == 2) {
+            train_eval = new ACC(booster_config, train_data.label, train_predict_values);
+	    }
+            test_eval = new ACC(booster_config, test_data.label, test_predict_values);
+        } 
     }
 }
 

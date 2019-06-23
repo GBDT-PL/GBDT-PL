@@ -72,4 +72,10 @@ public:
     double Eval();
 };
 
+class ACC: public Metric {
+public:
+    AUC(const BoosterConfig &booster_config, vector<double>& labelss, vector<double> & scoress);
+    double Eval();
+};
+
 #endif /* metrics_hpp */
