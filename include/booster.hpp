@@ -16,11 +16,14 @@
 #include <string>
 #include "metric.hpp"   
 #include <string>
+#include <unordered_map>
 #include "data_partition.hpp"
 #include "objective.hpp"
 #include "alignment_allocator.hpp"
 
 using std::vector;
+using std::unordered_map;
+using std::string;
 
 class Booster {
 private:
@@ -69,7 +72,7 @@ private:
                                    DataMat* data_mat);
     
     void GetMask(double prob, std::vector<bool>& mask);
-    
+     
     double EvalLoss(const vector<double> &predicts,
                     const vector<double> &labels,
                     const vector<double> &weights,
@@ -81,7 +84,9 @@ private:
     
     vector<double> train_scores, test_scores;
     vector<double> train_probs, test_probs;
-    vector<double> train_max_scores, test_max_scores;
+    vector<double> train_max_scores, test_max_scores; 
+    unordered_map<string, vector<double>> scores_per_iteration;
+    int best_iteration;
     
     void SetupTrees();
     void SetupEvals();
@@ -96,6 +101,10 @@ public:
     void Train();
     
     void Predict(DataMat &predict_data, vector<double> &results, int iters); 
+
+    int get_best_iteration(double* best_score);
+
+    vector<double>& get_per_iteration_scores(string data_name);
 };
 
 

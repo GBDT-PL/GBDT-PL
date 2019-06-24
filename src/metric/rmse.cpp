@@ -12,6 +12,7 @@
 RMSE::RMSE(const BoosterConfig &booster_config, vector<double> &labelss, vector<double> &scoress):
 Metric(booster_config, labelss, scoress) {
     name = "rmse"; 
+    larger_is_better = false;
 }
 
 double RMSE::Eval() {

@@ -14,6 +14,7 @@
 #include <omp.h>
 #include <fstream>
 #include <vector>
+#include <functional>
 #include "../tree/leaf_wise_tree.cpp"
 #include "../tree/level_wise_tree.cpp"
 #include "argmax.h"
@@ -55,6 +56,11 @@ data_partition(&_train_data, &_booster_config, gradients) {
     srand((int)time(NULL));
     
     evaluate_time = 0.0;
+    best_iteration = -1;
+    scores_per_iteration.emplace(train_data.name, vector<double>(0));
+    scores_per_iteration.emplace(test_data.name, vector<double>(0));
+    scores_per_iteration[train_data.name].resize(booster_config.num_trees, 0.0);
+    scores_per_iteration[test_data.name].resize(booster_config.num_trees, 0.0);
 }
 
 void Booster::SetupTrees() {
@@ -301,9 +307,13 @@ void Booster::Train() {
         cout << "[GBDT-PL] iteration " << i << endl;
         if(booster_config.verbose > 0) {
             if(booster_config.verbose == 2) {
-                cout << "[GBDT-PL] " << train_data.name << " " << train_eval->name << ": " << train_eval->Eval() << endl;
+                double train_eval_score = train_eval->Eval();
+                scores_per_iteration[train_data.name][i] = train_eval_score;
+                cout << "[GBDT-PL] " << train_data.name << " " << train_eval->name << ": " << train_eval_score << endl;
             }
-            cout << "[GBDT-PL] " << test_data.name << " " << test_eval->name << ": " << test_eval->Eval() << endl;
+            double test_eval_score = test_eval->Eval();
+            scores_per_iteration[test_data.name][i] = test_eval_score;
+            cout << "[GBDT-PL] " << test_data.name << " " << test_eval->name << ": " << test_eval_score << endl;
         }
         //booster_config.PrintIterationTime();
         booster_config.ClearIterationTime(); 
@@ -311,8 +321,39 @@ void Booster::Train() {
 	cout << endl;
     }
     std::cout << "[GBDT_PL] all time: " << (omp_get_wtime() - all_start_t) << std::endl;
-    //data_partition.PrintAllTime();  
-    //cout << "evaluate time: " << evaluate_time << endl;
+    double best_test_score = scores_per_iteration[test_data.name][0];
+    best_iteration = 0;
+    std::function<bool(double,double)> comp_func;
+    if(test_eval->larger_is_better) {
+        comp_func = [](double score1, double score2) { return score1 <= score2; };
+    }
+    else {
+        comp_func = [](double score1, double score2) { return  score1 >= score2; };
+    }
+    for(int i = 1; i < booster_config.num_trees; ++i) {
+        if(comp_func(best_test_score, scores_per_iteration[test_data.name][i] )) {
+            best_test_score = scores_per_iteration[test_data.name][i];
+            best_iteration = i;
+        }
+    }
+}
+
+int Booster::get_best_iteration(double* best_score) { 
+    *best_score = scores_per_iteration[test_data.name][best_iteration];
+    return best_iteration; 
+}
+
+vector<double>& Booster::get_per_iteration_scores(string data_name) {
+    if(data_name == train_data.name && booster_config.verbose != 2) {
+        cout << "[GBDT-PL]: please set verbose = 2 when training to get the per iteration train score. Otherwise zero scores will be returned." << endl;
+    }
+    if(data_name == test_data.name && booster_config.verbose == 0) {
+        cout << "[GBDT-PL]: please set verbose = 1 or 2 when training to get the per iteration evaluation score. Otherwise zero scores will be returned." << endl;
+    }
+    if(data_name != train_data.name && data_name != test_data.name) {
+        cout << "[GBDT-PL]: unknown data name " << data_name << endl;
+    }
+    return scores_per_iteration[data_name];
 }
 
 void Booster::Predict(DataMat &predict_data, vector<double> &results, int iters) {

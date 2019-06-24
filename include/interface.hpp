@@ -26,4 +26,8 @@ extern "C" int LinearGBMPrintBoosterConfig(LinearGBMBoosterConfig booster_config
 
 extern "C" int LinearGBMPredict(LinearGBM booster, LinearGBMDataMat test_data, double** preds, int* num_data, int iters);
 
+extern "C" int LinearGBMBestIteration(LinearGBM booster, int* best_iteration, double* best_score);
+
+extern "C" int LinearGBMGetScoresPerIteration(LinearGBM booster, const char* name, double** scores);
+
 #endif /* interface_h */

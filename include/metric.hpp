@@ -41,6 +41,7 @@ protected:
     vector<double> &labels;
     vector<double> &scores;
 public:
+    bool larger_is_better;
     string name;    
     Metric(const BoosterConfig &booster_configg, vector<double> &labelss, vector<double> &scoress); 
     virtual double Eval() = 0;

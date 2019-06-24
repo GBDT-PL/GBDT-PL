@@ -125,3 +125,11 @@ int LinearGBMPredict(LinearGBM booster, LinearGBMDataMat test_data, double** pre
     *preds = test_dataa.predict_values.data(); 
     *num_data = test_dataa.num_data;
 }
+
+int LinearGBMBestIteration(LinearGBM booster, int* best_iteration, double* best_score) {
+    *best_iteration = ((Booster*)booster)->get_best_iteration(best_score);
+}
+
+int LinearGBMGetScoresPerIteration(LinearGBM booster, const char* name, double** scores) {
+    *scores = ((Booster*)booster)->get_per_iteration_scores(string(name)).data();
+}

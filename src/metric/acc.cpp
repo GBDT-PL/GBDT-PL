@@ -13,6 +13,7 @@
 ACC::ACC(const BoosterConfig &booster_config, vector<double> &labelss, vector<double> &scoress):
 Metric(booster_config, labelss, scoress) {
     name = "acc"; 
+    larger_is_better = true;
 }
 
 double ACC::Eval() {

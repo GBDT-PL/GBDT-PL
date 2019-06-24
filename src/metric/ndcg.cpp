@@ -22,6 +22,7 @@ Metric(booster_config, labelss, scoress), queries(queriess) {
         }
         prevq = queries[i]; 
     }
+    larger_is_better = true;
 }
 
 double NDCG::Eval() {

@@ -13,6 +13,7 @@
 AUC::AUC(const BoosterConfig &booster_config, vector<double> &labelss, vector<double> &scoress):
 Metric(booster_config, labelss, scoress) {
     name = "auc"; 
+    larger_is_better = true;
 }
 
 static bool compare_rel(ScoreIndexRel *a, ScoreIndexRel *b) {
