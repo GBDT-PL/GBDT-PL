@@ -132,6 +132,7 @@ To create a booster, call the following function.
 .. code:: python
 
     gbdtpl.Booster(params, train_data, eval_data)
+    
 * ``params``: The parameter dictionary of GBDT-PL.
 * ``train_data``: The DataMat of training dataset.
 * ``eval_data``: The DataMat of evaluation dataset.
@@ -144,6 +145,13 @@ To train the booster, just call
 
     booster.Train()
 where ``booster`` is the booster instance created before.
+After training, you can get the best iteration and the best score of evaluation set.
+.. code:: python
+    booster.get_best_iteration()
+You can also get the scores of all iterations for both training and testing datasets.
+.. code:: python
+    booster.get_scores_per_iteration(data_name)
+where ``data_name`` is the name of training or test dataset.
 
 *******
 Predict
