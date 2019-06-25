@@ -31,16 +31,16 @@ We compare the accuracy in the following table. Different settings of hyperparam
 
 |Dataset Name| LightGBM | XGBoost | CatBoost |      GBDT-PL      | 
 |------------|------------|----------|-----------|----------------|
-|    Higgs   | 0.854025 | 0.853972  |     0.848184    | **0.860243** | 
-|   Epsilon  | 0.951422 | 0.948292  |     0.957247    | **0.958086** | 
-|  HEPMASS   | 0.95563 | 0.95567 | 0.95554 | **0.95645** | 
-|  SUSY   | 0.878112 | 0.877825 | 0.878206 | **0.878322** |
-| CASP | 3.5289 | 3.4939 | 3.7295 | **3.4605** | 
-| SGEMM | 5.45856 | 4.37929 | 12.69244 | **4.14205** | 
-| SUPERCONDUCTOR | 8.80776 | 8.91063 | 9.27494 | **8.77886** | 
-| CT | 1.33454 | 1.34131 | 1.87773 | **1.25233** | 
-| Energy | 66.753 | 64.939 | 67.152 | **64.335** | 
-| Year | 8.38817 | 8.38572 | 8.85069 | **8.36231** | 
+|    Higgs   | 0.854025 | 0.854147  |     0.851590    | **0.860198** | 
+|   Epsilon  | 0.951422 | 0.948292  |     0.957327    | **0.957894** | 
+|  HEPMASS   | 0.95563 | 0.95567 | 0.95554 | **0.95652** | 
+|  SUSY   | 0.878112 | 0.877825 | 0.878206 | **0.878287** |
+| CASP | 3.4961 | 3.4939 | 3.5183 | **3.4574** | 
+| SGEMM | 4.61431 | 4.37929 | 4.41177 | **4.16871** | 
+| SUPERCONDUCTOR | 8.80776 | 8.91063 | **8.78452** | 8.79527 | 
+| CT | 1.30902 | 1.34131 | 1.36937 | **1.23753** | 
+| Energy | **64.256** | 64.780 | 65.761 | 65.462 | 
+| Year | 8.38817 | 8.37935 | 8.42593 | **8.37233** | 
 
 ### Training Time
 We use the histogram version of XGBoost and LightGBM. Each tree in our experiments has at most **255 leaves**. For CatBoost, we constrain the **maximum tree depth to 8**. The **learning rate is 0.1**. We test both **63 bins and 255 bins** for the histograms. **lambda** is the coefficient for regularization terms, we set it as 0.01. **min sum of hessians** is the minimum sum of hessians allowed in each leaf. We set it as 100 to prevent the trees from growing too deep. For GBDT-PL, we use at most **5 regressors** per leaf. 
