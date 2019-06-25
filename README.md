@@ -27,7 +27,7 @@ We evaluate our algorithm on 10 public datasets.
 | Year | 412,206 | 103,139 | 90 | Regression | [year](https://archive.ics.uci.edu/ml/datasets/YearPredictionMSD) |
 
 ### Accuracy 
-We compare the accuracy in the following table. Different settings of hyperparameters are tried and the best result is picked for each algorithm. Details of settings can be found in **Parameter Setting** Section of [Experiment Setting](https://github.com/GBDT-PL/GBDT-PL/blob/master/docs/supple.pdf).
+We compare the accuracy in the following table. For XGBoost, LightGBM and CatBoost different settings of hyperparameters are tried and the best result is picked for each algorithm. For GBDT-PL, we separte 20% of the training data for validation. Details of settings can be found in **Parameter Setting** Section of [Experiment Setting](https://github.com/GBDT-PL/GBDT-PL/blob/master/docs/supple.pdf).
 
 |Dataset Name| LightGBM | XGBoost | CatBoost |      GBDT-PL      | 
 |------------|------------|----------|-----------|----------------|
