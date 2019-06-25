@@ -60,7 +60,3 @@ We run 500 iterations and plot testing accuracy per iteration.  For classificati
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence-1.png) 
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence-2.png) 
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence-3.png) 
-
-### GOSS Sampling
-We implement the Gradient Base One Side Sampling (GOSS) of LightGBM. At each iteration, we sample the data points with biggest gradient magnitude within top 20%, and random sample 10% from the rest of training data set. Compared with Figure 1 in this page, GOSS speedups the training process of both GBDT-PL and LightGBM.
-![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/goss.png)
