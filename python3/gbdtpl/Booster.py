@@ -7,6 +7,7 @@ class Booster:
         cwd = os.path.dirname(os.path.abspath(__file__))	
         self.LinearGBMLib = cdll.LoadLibrary(cwd + "/liblineargbm.py")
         self.booster_config = c_void_p()
+        self.params = params
         self.LinearGBMLib.CreateLinearGBMBoosterConfig(byref(self.booster_config))
         for key in params:
             self.LinearGBMLib.SetLinearGBMParams(self.booster_config, c_char_p(key.encode("utf-8")),
@@ -27,4 +28,16 @@ class Booster:
         num_data = c_int()
         self.LinearGBMLib.LinearGBMPredict(self.booster, test_data.data_mat, byref(preds), byref(num_data), c_int(iters))
         return self.__c_pointer_to_numpy_array(preds, num_data.value)
+
+    def get_best_iteration(self):
+        best_iteration = c_int()
+        best_score = c_double()
+        self.LinearGBMLib.LinearGBMBestIteration(self.booster, byref(best_iteration), byref(best_score))
+        return best_iteration.value, best_score.value
+
+    def get_scores_per_iteration(self, data_name):
+        scores = POINTER(c_double)()
+        self.LinearGBMLib.LinearGBMGetScoresPerIteration(self.booster, c_char_p(data_name.encode("utf-8")), byref(scores))
+        return self.__c_pointer_to_numpy_array(scores, self.params["num_trees"])
+
 
