@@ -123,7 +123,8 @@ void LinearBinFeature::PrepareHistogram(int leaf_id, bool use_cache,
         }
         
         float *local_bin_gradient = bin_gradients.data();   
-        for(int i = 0; i < num_data; i += 4) {
+	int num_data_aligned = num_data / 4 * 4;
+        for(int i = 0; i < num_data_aligned; i += 4) {
             __m256 __packed_gh = _mm256_load_ps(local_bin_gradient + (i << 1));
             __m256d __gh = _mm256_cvtps_pd(_mm256_extractf128_ps(__packed_gh, 0));          
             __m128d __gh0 = _mm256_extractf128_pd(__gh, 0);
@@ -155,6 +156,11 @@ void LinearBinFeature::PrepareHistogram(int leaf_id, bool use_cache,
             __result1 = _mm_add_pd(__gh1, __hist1);
             _mm_store_pd(bin_ptrs[bin], __result1);
         }
+	for(int i = num_data_aligned; i < num_data; ++i) {
+	    uint8_t bin = data_ptr[i];
+	    bin_ptrs[bin][0] += local_bin_gradient[2 * i];
+	    bin_ptrs[bin][1] += local_bin_gradient[2 * i + 1];
+	}
         return;
     }
     
