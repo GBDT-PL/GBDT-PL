@@ -204,7 +204,7 @@ protected:
     
     double Solve(const dvec32 &matrix,
                  const dvec32 &vec,
-                 dvec64 &ks, int n, double l3_reg, int row_size);
+                 dvec64 &ks, int n, double l1_reg, int row_size);
     
     void SolveMKL(const dvec32 &matrix,
                   const dvec32 &vec, int n, int row_size,

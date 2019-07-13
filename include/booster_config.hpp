@@ -24,10 +24,12 @@ public:
     BoosterConfig(int _num_trees,
                   int _max_leaf,
                   double _min_gain,
+                  double _l1_reg,
                   double _l2_reg,
                   std::string _loss,
                   double _learning_rate,
                   std::string _eval_metric,
+                  std::string _normalization,
                   int _num_classes,
                   int _num_threads,
                   int _max_bin,
@@ -47,6 +49,7 @@ public:
     loss(_loss),
     learning_rate(_learning_rate),
     eval_metric(_eval_metric),
+    normalization(_normalization),
     num_classes(_num_classes),
     num_threads(_num_threads),
     max_bin(_max_bin),
@@ -55,6 +58,7 @@ public:
     grow_by(_grow_by),
     max_level(_max_level),
     l2_reg(_l2_reg),
+    l1_reg(_l1_reg),
     verbose(_verbose),
     leaf_type(_leaf_type),
     sparse_threshold(_sparse_threshold),
@@ -67,25 +71,27 @@ public:
         all_prepare_histogram_time = 0.0;
         all_find_split_time = 0.0;
         all_split_time = 0.0;
-         all_update_train_score_time = 0.0;
-         all_update_gradients_time = 0.0;
-         all_after_train_tree_time = 0.0;
-         
-         prepare_bin_time = 0.0;
-         prepare_histogram_time = 0.0;
-         find_split_time = 0.0;
-         split_time = 0.0;
-         update_train_score_time = 0.0;
-         update_gradients_time = 0.0;
-         after_train_tree_time = 0.0;       
+        all_update_train_score_time = 0.0;
+        all_update_gradients_time = 0.0;
+        all_after_train_tree_time = 0.0;
+        
+        prepare_bin_time = 0.0;
+        prepare_histogram_time = 0.0;
+        find_split_time = 0.0;
+        split_time = 0.0;
+        update_train_score_time = 0.0;
+        update_gradients_time = 0.0;
+        after_train_tree_time = 0.0;       
          
         cout << "num_trees " << num_trees << endl;
         cout << "max_leaf " << max_leaf << endl;
         cout << "min_gain " << min_gain << endl;
         cout << "l2_reg " << l2_reg << endl;
+        cout << "l1_reg " << l1_reg << endl;
         cout << "loss " << loss << endl;
         cout << "learning_rate " << learning_rate << endl;  
         cout << "eval_metric " << eval_metric << endl;
+        cout << "normalization " << normalization << endl;
         cout << "num_classes " << num_classes << endl;
         cout << "num_threads " << num_threads << endl;
         cout << "max_bin " << _max_bin << endl;
@@ -94,48 +100,52 @@ public:
         cout << "grow_by " << grow_by << endl;
         cout << "max_level " << max_level << endl;
         cout << "verbose " << verbose << endl;
-         cout << "leaf type " << _leaf_type << endl;
-         cout << "sparse threshold 1 " << sparse_threshold << endl;
-         cout << "boosting_type " << boosting_type << endl;
-         cout << "goss_alpha " << goss_alpha << endl;
-         cout << "goss_beta " << goss_beta << endl;
+        cout << "leaf type " << _leaf_type << endl;
+        cout << "sparse threshold 1 " << sparse_threshold << endl;
+        cout << "boosting_type " << boosting_type << endl;
+        cout << "goss_alpha " << goss_alpha << endl;
+        cout << "goss_beta " << goss_beta << endl;
     }
     
-    int num_trees;
+    int num_trees = 500;
     
-    int max_leaf;
+    int max_leaf = 255;
     
-    double min_gain;
+    double min_gain = 0.0;
+
+    double l1_reg = 0.01;
     
-    double l2_reg;
+    double l2_reg = 0.01;
     
     std::string loss;
     
-    double learning_rate;
+    double learning_rate = 0.1;
     
     std::string eval_metric;
+
+    std::string normalization = "no";
     
     int num_classes;
     
-    bool train_multi_class;
+    bool train_multi_class = false;
     
-    int num_threads;
+    int num_threads = 24;
     
-    int max_bin;
+    int max_bin = 255;
     
-    double min_sum_hessian_in_leaf;
+    double min_sum_hessian_in_leaf = 10.0;
     
-    int num_vars;
+    int num_vars = 5;
     
-    int max_level;
+    int max_level = 10;
     
-    int verbose;
+    int verbose = 2;
     
-    std::string grow_by;
+    std::string grow_by = "leaf";
     
-    std::string leaf_type;
+    std::string leaf_type = "additive_linear";
     
-    double sparse_threshold;
+    double sparse_threshold = 0.0;
     
     double all_prepare_bin_time;
     double prepare_bin_time;
@@ -153,19 +163,21 @@ public:
     double all_after_train_tree_time;
     double after_train_tree_time;
     
-    string boosting_type;
+    string boosting_type = "gbdt";
     double goss_alpha;
     double goss_beta; 
     
 
     void PrintAllParams() {
-   	cout << "num_trees " << num_trees << endl;
+   	    cout << "num_trees " << num_trees << endl;
         cout << "max_leaf " << max_leaf << endl;
         cout << "min_gain " << min_gain << endl;
+        cout << "l1_reg " << l1_reg << endl;
         cout << "l2_reg " << l2_reg << endl;
         cout << "loss " << loss << endl;
         cout << "learning_rate " << learning_rate << endl;  
         cout << "eval_metric " << eval_metric << endl;
+        cout << "normalization " << normalization << endl;
         cout << "num_classes " << num_classes << endl;
         cout << "num_threads " << num_threads << endl;
         cout << "max_bin " << max_bin << endl;
@@ -174,11 +186,11 @@ public:
         cout << "grow_by " << grow_by << endl;
         cout << "max_level " << max_level << endl;
         cout << "verbose " << verbose << endl;
-         cout << "leaf type " << leaf_type << endl;
-         cout << "sparse threshold 1 " << sparse_threshold << endl;
-         cout << "boosting_type " << boosting_type << endl;
-         cout << "goss_alpha " << goss_alpha << endl;
-         cout << "goss_beta " << goss_beta << endl;
+        cout << "leaf type " << leaf_type << endl;
+        cout << "sparse threshold 1 " << sparse_threshold << endl;
+        cout << "boosting_type " << boosting_type << endl;
+        cout << "goss_alpha " << goss_alpha << endl;
+        cout << "goss_beta " << goss_beta << endl;
     }
 
 

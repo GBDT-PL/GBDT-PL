@@ -502,7 +502,7 @@ SplitInfo* SparseLinearBinFeature::FindBestSplit(int leaf_id, double leaf_gain,
         return nullptr;
     }
     
-    double l3_reg = booster_config->l2_reg; 
+    double l1_reg = booster_config->l2_reg; 
     
     int row_size = 2 + prev_num_vars * 3;
     if(prev_num_vars >= 2) {
@@ -602,9 +602,9 @@ SplitInfo* SparseLinearBinFeature::FindBestSplit(int leaf_id, double leaf_gain,
                 
             }
             
-            double left_gain = Solve(left_matrix, left_vec, left_k, cur_num_vars + 1, l3_reg, row_size + 1);
+            double left_gain = Solve(left_matrix, left_vec, left_k, cur_num_vars + 1, l1_reg, row_size + 1);
             
-            double right_gain = Solve(right_matrix, right_vec, right_k, cur_num_vars + 1, l3_reg, row_size + 1);
+            double right_gain = Solve(right_matrix, right_vec, right_k, cur_num_vars + 1, l1_reg, row_size + 1);
             
             double gain = leaf_gain - left_gain - right_gain;
             
@@ -664,10 +664,10 @@ SplitInfo* SparseLinearBinFeature::FindBestSplit(int leaf_id, double leaf_gain,
                booster_config->l2_reg) break;   
             
             double left_gain = Solve(left_matrix, left_vec, left_k,
-                                     cur_num_vars + 1, l3_reg, row_size - 1 - prev_num_vars);
+                                     cur_num_vars + 1, l1_reg, row_size - 1 - prev_num_vars);
             
             double right_gain = Solve(right_matrix, right_vec, right_k,
-                                      cur_num_vars + 1, l3_reg, row_size - 1 - prev_num_vars);
+                                      cur_num_vars + 1, l1_reg, row_size - 1 - prev_num_vars);
             
             double gain = leaf_gain - left_gain - right_gain;
             

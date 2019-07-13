@@ -90,8 +90,6 @@ all_gradients(gradientss) {
                                                train_set->get_bin_value(i)); 
         //}
     } 
-
-    //PushDataIntoFeatures();
     
     int max_var = booster_config->num_vars;
     if(booster_config->leaf_type == "additive_linear") {
@@ -212,30 +210,6 @@ void DataPartition::Split(int leaf_id, SplitInfo* split, int cur_class) {
 vector<RowHistogram*>* DataPartition::GetHistogramFromPool() {  
     assert(first_unused_histogram < booster_config->max_leaf);      
     return histogram_repo[first_unused_histogram++];    
-}
-
-void DataPartition::PushDataIntoFeatures() {    
-    std::ifstream fin(train_set->csv_fname);
-    double fvalue = 0.0;
-    int feature_idx = 0, data_idx = 0;
-    char delimiter = '\0';
-    while(fin >> fvalue) {
-        if(feature_idx != train_set->label_idx && feature_idx != train_set->query_idx) {    
-            int true_feature_idx = train_set->feature_idx_map[feature_idx];
-            assert(true_feature_idx != -1 || fvalue == 0.0);
-            if(true_feature_idx != -1) {
-                (features[true_feature_idx])->PushIntoBin(fvalue, data_idx);
-            }
-        }
-        delimiter = fin.get();
-        if(delimiter == ',') {
-            feature_idx += 1;
-        }
-        else if(delimiter == '\r' || delimiter == '\n') {
-            feature_idx = 0;                                
-            data_idx += 1;  
-        }
-    }
 }
 
 void DataPartition::PrintAllTime() {

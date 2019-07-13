@@ -26,13 +26,14 @@ feature_values(feature_values_), label(label_) {
 
 void DataReader::Read(int num_threads) {
     if(num_threads == 1) {
+        //one thread for reading lines from file, the other for parsing lines
     	num_threads = 2;
     }
     ifstream fin_line_count(file_path);
     
     if(!fin_line_count) {
         cout << "[GBDT-PL] Fail to find file: " << file_path << endl;
-	exit(1);
+	    exit(1);
     }
 
     string line_count;
@@ -99,9 +100,9 @@ void DataReader::Read(int num_threads) {
                             else if(fid == label_idx) {	
                                 label[cur_total_lines + i] = value;
                             }
-			    else {
-			    	feature_values[fid - 1][cur_total_lines + i] = value;
-			    }
+                            else {
+                                feature_values[fid - 1][cur_total_lines + i] = value;
+                            }
                             begin = j + 1;
                             ++fid;
                         }
@@ -113,9 +114,9 @@ void DataReader::Read(int num_threads) {
                     else if(fid == label_idx) {
                         label[cur_total_lines + i] = value;
                     }
-		    else {
-		        feature_values[fid - 1][cur_total_lines + i] = value;
-		    }
+                    else {
+                        feature_values[fid - 1][cur_total_lines + i] = value;
+                    }
                 }
             }
         }
@@ -133,7 +134,7 @@ void DataReader::ReadByRow(int num_threads) {
     
     if(!fin_line_count) {
         cout << "[GBDT-PL] Fail to find file: " << file_path << endl;
-	exit(1);
+	    exit(1);
     }
 
     string line_count;
@@ -200,9 +201,9 @@ void DataReader::ReadByRow(int num_threads) {
                             else if(fid == label_idx) {
                                 label[cur_total_lines + i] = value;
                             }
-			    else {
-			        feature_values[cur_total_lines + i][fid - 1] = value;
-			    }
+                            else {
+                                feature_values[cur_total_lines + i][fid - 1] = value;
+                            }
                             begin = j + 1;
                             ++fid;
                         }
@@ -214,9 +215,9 @@ void DataReader::ReadByRow(int num_threads) {
                     else if(fid == label_idx) {
                         label[cur_total_lines + i] = value;
                     }
-		    else {
-		        feature_values[cur_total_lines + i][fid - 1] = value;
-		    }
+                    else {
+                        feature_values[cur_total_lines + i][fid - 1] = value;
+                    }
                 }
             }
         }

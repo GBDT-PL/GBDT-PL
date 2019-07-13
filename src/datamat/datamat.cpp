@@ -9,6 +9,7 @@
 #include "datamat.hpp"
 #include <cassert>
 #include <fstream>
+#include <limits>
 #include <omp.h>
 
 using std::vector;
@@ -32,20 +33,20 @@ booster_config(_booster_config), name(_name) {
         reader.ReadByRow(booster_config.num_threads);
         num_feature = reader.get_num_features();
         num_data = reader.get_num_data();
-	cout << "[GBDT-PL] finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl; 
+        CalcNormStatsAndNormalize(unbined_data, reference);
+	    cout << "[GBDT-PL] finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl; 
     }
     else {
         vector<vector<double>> feature_matrix;
         csv_fname = fname;
         DataReader reader(fname, 50000, feature_matrix, label, label_idx);
+
         reader.Read(booster_config.num_threads); 
         num_feature = reader.get_num_features();
         num_data = reader.get_num_data();
+
+        CalcNormStatsAndNormalize(feature_matrix, reference);
         
-        feature_idx_map.resize(num_feature + 1, -1);    
-        for(int i = 1; i < num_feature + 1; ++i) {
-            feature_idx_map[i] = i - 1;
-        }
         sparse_ratio.resize(num_feature, 0.0);
         
         CalcBinBoundaries(feature_matrix);
@@ -53,6 +54,90 @@ booster_config(_booster_config), name(_name) {
         feature_matrix.clear();
         feature_matrix.shrink_to_fit(); 
         cout << "[GBDT-PL] finish loading " << name << ": " << num_data << " data points with " << num_feature << " features." << endl;  
+    }
+}
+
+void DataMat::CalcNormStatsAndNormalize(vector<vector<double>>& feature_matrix, DataMat* reference) {
+    if(reference == nullptr) {
+        norm_bias.resize(num_feature);
+        norm_scale.resize(num_feature);
+        if(booster_config.normalization == "min_max") {
+            #pragma omp parallel for schedule(static) num_threads(booster_config.num_threads)
+            for(int fid = 0; fid < num_feature; ++fid) {
+                double feature_max = std::numeric_limits<double>::min();
+                double feature_min = std::numeric_limits<double>::max();
+                for(int idx = 0; idx < num_data; ++idx) {
+                    double fval = feature_matrix[fid][idx];
+                    if(fval > feature_max) {
+                        feature_max = fval;
+                    }
+                    if(fval < feature_min) {
+                        feature_min = fval;
+                    }
+                }
+                if(feature_max == feature_min) {
+                    norm_scale[fid] = 1.0;
+                    norm_bias[fid] = feature_min;
+                }
+                else {
+                    norm_scale[fid] = feature_max - feature_min;
+                    norm_bias[fid] = feature_min;
+                }
+            }
+        }
+        else if(booster_config.normalization == "mean_std") {
+            #pragma omp parallel for schedule(static) num_threads(booster_config.num_threads)
+            for(int fid = 0; fid < num_feature; ++fid) {
+                double feature_sum = 0.0, feature_sum_square = 0.0;
+                for(int idx = 0; idx < num_data; ++idx) {
+                    double fval = feature_matrix[fid][idx];
+                    feature_sum += fval;
+                    feature_sum_square += fval * fval;
+                }
+                double mean = feature_sum / num_data;
+                double stdev = (feature_sum_square / num_data) - mean * mean;
+                if(stdev <= 1e-15) {
+                    norm_bias[fid] = mean;
+                    norm_scale[fid] = 1.0;
+                }
+                else {
+                    norm_bias[fid] = mean;
+                    norm_scale[fid] = stdev;
+                }
+            }
+        }
+        if(booster_config.normalization != "no") {
+            #pragma omp parallel for schedule(static) num_threads(booster_config.num_threads)
+            for(int fid = 0; fid < num_feature; ++fid) {
+                double bias = norm_bias[fid];
+                double scale = norm_scale[fid];
+                for(int idx = 0; idx < num_data; ++idx) {
+                    double fval = feature_matrix[fid][idx];
+                    feature_matrix[fid][idx] = (fval - bias) / scale;
+                }
+            }
+        }
+    }
+    else {
+        norm_bias = reference->norm_bias;
+        norm_scale = reference->norm_scale;
+        for(int fid = 0; fid < num_feature; ++fid) {
+            double bias = norm_bias[fid];
+            double scale = norm_scale[fid];
+            cout << "test feature " << fid << " bias " << bias << " sacle " << scale << endl;  
+        }
+        cout << "num_feature " << num_feature << " num_data " << num_data << endl;  
+        if(booster_config.normalization != "no") {
+            #pragma omp parallel for schedule(static) num_threads(booster_config.num_threads)
+            for(int fid = 0; fid < num_feature; ++fid) {
+                double bias = norm_bias[fid];
+                double scale = norm_scale[fid];
+                for(int idx = 0; idx < num_data; ++idx) {
+                    double fval = unbined_data[idx][fid];
+                    unbined_data[idx][fid] = (fval - bias) / scale;
+                }
+            }
+        }
     }
 }
 
@@ -76,7 +161,6 @@ void DataMat::CalcBinBoundaries(vector<vector<double> > &feature_matrix) {
         std::sort(indices.begin(), indices.end(), [&feature_matrix, i] (int a, int b)   
                   { return feature_matrix[i][a] < feature_matrix[i][b]; } );
         std::sort(feature_matrix[i].begin(), feature_matrix[i].end());
-        //bin_boundaries.emplace_back(0);
         num_bins_per_feature[i] = CalcBinBoundary(feature_matrix[i], bin_boundaries[i],
                                                   indices, bin_data[i], bin_counts[i], bin_values[i]); 
     }
@@ -85,16 +169,9 @@ void DataMat::CalcBinBoundaries(vector<vector<double> > &feature_matrix) {
 int DataMat::CalcBinBoundary(vector<double> &sorted_feature, vector<double>& bin_boundary,
                               vector<int> &data_indices, vector<uint8_t> &bin_data,
                              vector<int>& bin_counts, vector<double>& bin_values) {
-    //int num_zero = num_data - static_cast<int>(sorted_feature.size());
     vector<double> unique_values;
     vector<int> value_count;
     int num_values = 0;
-    
-    /*if(sorted_feature[0] > 0.0 && num_zero > 0) {
-        unique_values.push_back(0.0);
-        value_count.push_back(num_zero);    
-        num_values += 1;
-    }*/
     
     unique_values.push_back(sorted_feature[0]); 
     value_count.push_back(1);
@@ -102,11 +179,6 @@ int DataMat::CalcBinBoundary(vector<double> &sorted_feature, vector<double>& bin
     
     for(int i = 1; i < sorted_feature.size(); ++i) {
         if(sorted_feature[i] != sorted_feature[i - 1]) {
-            /*if(sorted_feature[i - 1] < 0.0 && sorted_feature[i] > 0.0 && num_zero > 0) {
-                unique_values.push_back(0.0);
-                value_count.push_back(num_zero);
-                num_values += 1;
-            }*/
             unique_values.push_back(sorted_feature[i]); 
             value_count.push_back(1);
             num_values += 1;
@@ -115,12 +187,6 @@ int DataMat::CalcBinBoundary(vector<double> &sorted_feature, vector<double>& bin
             ++value_count.back();
         }
     }
-    
-    /*if(sorted_feature.back() < 0.0 && num_zero > 0) {
-        unique_values.push_back(0.0);
-        value_count.push_back(num_zero);
-        num_values += 1;
-    }*/
     
     int sum_of_count = 0;
     for(int i = 0; i < num_values; ++i) {
@@ -157,7 +223,7 @@ int DataMat::CalcBinBoundary(vector<double> &sorted_feature, vector<double>& bin
         for(int i = 0; i < num_values; ++i) {
             bin_values[i] /= bin_counts[i];
         }
-	bin_values.resize(num_values);
+	    bin_values.resize(num_values);
         bin_values.shrink_to_fit();
         bin_counts.resize(num_values);
         bin_counts.shrink_to_fit();
@@ -222,7 +288,7 @@ int DataMat::CalcBinBoundary(vector<double> &sorted_feature, vector<double>& bin
         for(int i = 0; i < bin_cnt; ++i) {
             bin_values[i] /= bin_counts[i];
         }
-	bin_values.resize(bin_cnt);
+	    bin_values.resize(bin_cnt);
         bin_values.shrink_to_fit();
         bin_counts.resize(bin_cnt);
         bin_counts.shrink_to_fit();

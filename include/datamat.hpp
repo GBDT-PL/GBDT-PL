@@ -28,6 +28,9 @@ private:
     int CalcBinBoundary(vector<double> &sorted_feature, vector<double> & bin_boundary,
                         vector<int> &data_indices, vector<uint8_t> &bin_data,
                         vector<int>& bin_counts, vector<double>& bin_values);
+
+    void CalcNormStatsAndNormalize(vector<vector<double>>& feature_matrix, DataMat* reference); 
+
 public:
     vector<double> weights;
     
@@ -39,14 +42,14 @@ public:
             DataMat* _reference = nullptr);
     
     void Shrink(); 
-    
-    vector<int> feature_idx_map;
     vector<vector<int>> bin_counts;
     vector<double> predict_values;
     vector<vector<double>> bin_values; 
     vector<vector<double>> unbined_data;
     vector<vector<double>> bin_boundaries;
     vector<vector<uint8_t>> bin_data;
+    vector<double> norm_bias;
+    vector<double> norm_scale;
     int label_idx;
     int query_idx; 
     vector<int> num_bins_per_feature;

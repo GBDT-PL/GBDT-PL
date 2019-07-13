@@ -543,7 +543,7 @@ SplitInfo* LinearBinFeature::FindBestSplit(int leaf_id,
         return nullptr;
     }
     
-    double l3_reg = booster_config->l2_reg;
+    double l1_reg = booster_config->l1_reg;
     
     int row_size = 2 + prev_num_vars * 3;
     if(prev_num_vars >= 2) {
@@ -639,9 +639,9 @@ SplitInfo* LinearBinFeature::FindBestSplit(int leaf_id,
             if(right_matrix[0] < booster_config->min_sum_hessian_in_leaf +
                booster_config->l2_reg) break;
             
-            double left_gain = Solve(left_matrix, left_vec, left_k, cur_num_vars + 1, l3_reg, row_size + 1);
+            double left_gain = Solve(left_matrix, left_vec, left_k, cur_num_vars + 1, l1_reg, row_size + 1);
             
-            double right_gain = Solve(right_matrix, right_vec, right_k, cur_num_vars + 1, l3_reg, row_size + 1);
+            double right_gain = Solve(right_matrix, right_vec, right_k, cur_num_vars + 1, l1_reg, row_size + 1);
             
             double gain = leaf_gain - left_gain - right_gain;
             
@@ -701,10 +701,10 @@ SplitInfo* LinearBinFeature::FindBestSplit(int leaf_id,
                booster_config->l2_reg) break;
             
             double left_gain = Solve(left_matrix, left_vec, left_k,
-                                     cur_num_vars + 1, l3_reg, row_size - 1 - prev_num_vars);
+                                     cur_num_vars + 1, l1_reg, row_size - 1 - prev_num_vars);
             
             double right_gain = Solve(right_matrix, right_vec, right_k,
-                                      cur_num_vars + 1, l3_reg, row_size - 1 - prev_num_vars);
+                                      cur_num_vars + 1, l1_reg, row_size - 1 - prev_num_vars);
             
             double gain = leaf_gain - left_gain - right_gain;
             
@@ -766,7 +766,7 @@ SplitInfo* LinearBinFeature::FindBestSplit(int leaf_id,
 double LinearBinFeature::Solve(const dvec32 &matrix,
                                const dvec32 &vec,   
                                dvec64 &ks,
-                               int n, double l3_reg, int row_size) {
+                               int n, double l1_reg, int row_size) {
     double t_start = omp_get_wtime();
     SolveMKL(matrix, vec, n, row_size, ks);
     double t_end = omp_get_wtime();
@@ -776,7 +776,7 @@ double LinearBinFeature::Solve(const dvec32 &matrix,
 #pragma omp simd aligned(vec_ptr,ks_ptr:32)
     for(int i = 0; i < n; ++i) {
         loss -= 0.5 * ks_ptr[i] * vec_ptr[i];
-        loss += l3_reg * fabs(ks_ptr[i]);
+        loss += l1_reg * fabs(ks_ptr[i]);
     }
     return loss;
 }

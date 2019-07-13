@@ -37,8 +37,8 @@ int main(int argc, const char * argv[]) {
     	cout << "usage: ./main <loss> <metric> <num bins> <max var> <node type> <verbose> <boosting> <label index> <group id index> <train file> <test file> <dataset name> <predict fname>" << endl;
 	return -1;
     }
-    BoosterConfig booster_config(500, 254, 0.0, 0.01, argv[1], 0.1,
-                                argv[2], 1, 24, std::atoi(argv[3]),
+    BoosterConfig booster_config(500, 254, 0.0, 0.01, 0.01, argv[1], 0.1,
+                                argv[2], "no", 1, 24, std::atoi(argv[3]),
                                  100.0, std::atoi(argv[4]), "leaf", argv[5], 5, std::atoi(argv[6]), 0.0, argv[7], 0.2, 0.1); 
     
     DataMat data_mat(booster_config, "train", std::atoi(argv[8]), std::atoi(argv[9]),

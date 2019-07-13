@@ -27,6 +27,9 @@ int SetLinearGBMParams(LinearGBMBoosterConfig booster_config,
     else if(string_key == "lambda") {
         config->l2_reg = std::atof(value);
     }
+    else if(string_key == "l1_reg") {
+        config->l1_reg = std::atof(value);
+    }
     else if(string_key == "objective") {
         config->loss = string_value;
     }
@@ -35,6 +38,9 @@ int SetLinearGBMParams(LinearGBMBoosterConfig booster_config,
     }
     else if(string_key == "eval_metric") {
         config->eval_metric = string_value;
+    }
+    else if(string_key == "normalization") {
+        config->normalization = string_value;
     }
     else if(string_key == "num_classes") {
         config->num_classes = std::atoi(value);
@@ -100,10 +106,10 @@ int CreateLinearGBMDataMat(LinearGBMBoosterConfig booster_config, const char* na
                            const char* file_path, LinearGBMDataMat *out, LinearGBMDataMat reference) {
 
     if(reference != nullptr) { 
-	*out = new DataMat(*(BoosterConfig*)booster_config, string(name), label_index, query_index, string(file_path), (DataMat*)reference);  
+	    *out = new DataMat(*(BoosterConfig*)booster_config, string(name), label_index, query_index, string(file_path), (DataMat*)reference);  
     }
     else {
- 	*out = new DataMat(*(BoosterConfig*)booster_config, string(name), label_index, query_index, string(file_path));  
+ 	    *out = new DataMat(*(BoosterConfig*)booster_config, string(name), label_index, query_index, string(file_path));  
     }
     return 0;
 }

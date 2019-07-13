@@ -75,8 +75,6 @@ private:
     
     void PrepareHistogramSize(int leaf_id, bool use_cache);
     
-    void PushDataIntoFeatures();
-    
 public:
     DataPartition(DataMat* _train_set, BoosterConfig* _booster_config,  
                   fvec64 &gradients);
