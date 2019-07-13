@@ -35,7 +35,7 @@ Booster Parameters
 
   - The minimum value of sum of hessians of all the data in a leaf. 
 
-* ``lambda``
+* ``l2_reg``
 
   - The coefficient for L2 regularization for the parameters of linear models. 
   
@@ -103,10 +103,10 @@ Tree Parameters
   
 * ``leaf_type``
   - The approach to fit parameters in leaves.
-  - Choices: ``constant``, ``linear``, ``additive_linear``
+  - Choices: ``constant``, ``linear``, ``half_additive``
   - ``constant``: Use ordinary regression trees with constant leaf values.
   - ``linear``: Use linear functions to produce the leaf values. The parameters of linear functions are all recalculated when a leaf is split into child nodes.
-  - ``additive_linear``: Same as ``linear``, but we don't recalculate all the linear function parameters. We use the half-additive fitting technique in our paper to refit the linear functions.
+  - ``half_additive``: Same as ``linear``, but we don't recalculate all the linear function parameters. We use the half-additive fitting technique in our paper to refit the linear functions.
   
 * ``max_depth``
   - The maximum number of levels in each tree, used when ``grow_by=level``

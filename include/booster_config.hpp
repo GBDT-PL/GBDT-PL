@@ -129,7 +129,7 @@ public:
     
     bool train_multi_class = false;
     
-    int num_threads = 24;
+    int num_threads = 1;
     
     int max_bin = 255;
     
@@ -143,7 +143,7 @@ public:
     
     std::string grow_by = "leaf";
     
-    std::string leaf_type = "additive_linear";
+    std::string leaf_type = "half_additive";
     
     double sparse_threshold = 0.0;
     

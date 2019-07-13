@@ -24,7 +24,7 @@ int SetLinearGBMParams(LinearGBMBoosterConfig booster_config,
     else if(string_key == "min_sum_hessians") {
         config->min_sum_hessian_in_leaf = std::atof(value);
     }
-    else if(string_key == "lambda") {
+    else if(string_key == "l2_reg") {
         config->l2_reg = std::atof(value);
     }
     else if(string_key == "l1_reg") {

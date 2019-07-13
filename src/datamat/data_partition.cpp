@@ -92,7 +92,7 @@ all_gradients(gradientss) {
     } 
     
     int max_var = booster_config->num_vars;
-    if(booster_config->leaf_type == "additive_linear") {
+    if(booster_config->leaf_type == "half_additive") {
         max_var = 2;
     }
     for(int i = 0; i < booster_config->max_leaf; ++i) {

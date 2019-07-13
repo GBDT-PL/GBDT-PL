@@ -65,7 +65,7 @@ data_partition(&_train_data, &_booster_config, gradients) {
 
 void Booster::SetupTrees() {
     if(booster_config.grow_by == "leaf") {
-        if(booster_config.leaf_type == "additive_linear") {
+        if(booster_config.leaf_type == "half_additive") {
             for(int i = 0; i < booster_config.num_trees; ++i) {
                 for(int j = 0; j < booster_config.num_classes; ++j) {
                     trees[i * booster_config.num_classes + j] =
@@ -91,7 +91,7 @@ void Booster::SetupTrees() {
         }
     }
     else if(booster_config.grow_by == "level") {
-        if(booster_config.leaf_type == "additive_linear") {
+        if(booster_config.leaf_type == "half_additive") {
             for(int i = 0; i < booster_config.num_trees; ++i) {
                 for(int j = 0; j < booster_config.num_classes; ++j) {
                     trees[i * booster_config.num_classes + j] =
