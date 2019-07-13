@@ -34,6 +34,10 @@ Booster Parameters
 * ``min_sum_hessians``
 
   - The minimum value of sum of hessians of all the data in a leaf. 
+  
+* ``l1_reg``
+
+  - The coefficient for L1 regularization for the parameters of linear models. 
 
 * ``l2_reg``
 
@@ -58,6 +62,14 @@ Booster Parameters
   - ``auc``: For binary classification.
   - ``rmse``: For regression.
   - ``ndcg``: For ranking.
+  
+* ``normalization``
+
+  - The method used to normalize the feature values, default is "no"
+  - Choices: ``no``, ``min_max``, ``mean_std``
+  - ``no``: No normalization.
+  - ``min_max``: Scale the feature values to [0, 1] with minimum and maximum values.
+  - ``mean_std``: Normalize feature values to Gaussian distribution with 0 mean and 1 variance.
   
 * ``num_classes``
 
