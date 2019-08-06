@@ -62,11 +62,11 @@ all_gradients(gradientss) {
     right_copy_offsets.resize(booster_config->num_threads + 1, 0);
 
     int least_bin = booster_config->max_bin;
-    least_bin_feature = 0;
+    least_bin_feature = -1;
     for(int i = 0; i < train_set->num_feature; ++i) {
         if(train_set->num_bins_per_feature[i] > 1) {
             useful_features.push_back(i);
-            if(train_set->num_bins_per_feature[i] < least_bin) {
+            if(least_bin_feature == -1 || train_set->num_bins_per_feature[i] < least_bin) {
                 least_bin = train_set->num_bins_per_feature[i];     
                 least_bin_feature = i;
             }
