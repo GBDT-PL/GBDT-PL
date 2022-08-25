@@ -1,8 +1,3 @@
-# News
-04/08/2019: New experiments added.
-
-04/04/2018: Speedup CSV file preprocess. Python interface for Linux is available now. Documentation will be added soon. 
-
 # GBDT-PL
 We extend gradient boosting to use piecewise linear regression trees (PL Trees), 
 instead of piecewise constant regression trees. PL Trees can accelerate convergence of
