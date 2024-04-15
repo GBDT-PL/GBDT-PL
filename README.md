@@ -1,8 +1,11 @@
 # GBDT-PL
-We extend gradient boosting to use piecewise linear regression trees (PL Trees), 
+This is the implementation for the paper [Gradient Boosting with Piece-Wise Linear Regression Trees](https://www.ijcai.org/Proceedings/2019/0476.pdf). We extend gradient boosting to use piecewise linear regression trees (PL Trees), 
 instead of piecewise constant regression trees. PL Trees can accelerate convergence of
 GBDT. Moreover, our new algorithm fits better to modern computer architectures with powerful
 Single Instruction Multiple Data (SIMD) parallelism. We name our new algorithm GBDT-PL.
+
+## News
+An approximated version of GBDT-PL has been implemented in [LightGBM](https://lightgbm.readthedocs.io/en/latest/Parameters.html#linear_tree) with the `linear_tree=true` parameter enabled.
 
 ## Experiments 
 We evaluate our algorithm on 10 public datasets.
@@ -55,3 +58,6 @@ We run 500 iterations and plot testing accuracy per iteration.  For classificati
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence-1.png) 
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence-2.png) 
 ![](https://github.com/GBDT-PL/GBDT-PL/raw/master/figures/convergence-3.png) 
+
+## Reference Paper
+Yu Shi, Jian Li, Zhize Li. [Gradient Boosting with Piece-Wise Linear Regression Trees](https://www.ijcai.org/Proceedings/2019/0476.pdf). Proceedings of the 28th International Joint Conference on Artificial Intelligence. 2019: 3432-3438.
